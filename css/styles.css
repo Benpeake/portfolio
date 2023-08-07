@@ -47,6 +47,10 @@ p.nav-item{
   margin: 0px;
 }
 
+.project-copy h2{
+  margin-top: 0px;
+}
+
 .top-bar {
   padding: 15px;
   background-color: transparent;
@@ -79,7 +83,7 @@ main{
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin: 0 200px;
+  margin: 0 240px;
   height: 100vh;
 }
 
@@ -96,21 +100,46 @@ main{
   justify-content: center;
 }
 
+.project-2{
+  background-color: var(--black);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-3 {
+  background-color: var(--avo);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .project-overview{
   display: grid;
   grid-template-columns:1fr 2fr;
   gap: 30px;
   margin: 0 200px;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   align-content: center;
   min-height: 300px;
 }
 
-.project-image{
-
-
+.project-links{
+text-align: right;
+margin-top: 30px;
 }
+
+.project-links a{
+  color: #0fff95;
+  padding-left: 30px;
+  font-size: 1.2rem;
+}
+
 
 .project-copy{
   min-width: 400px;
