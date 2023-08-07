@@ -192,6 +192,7 @@ margin-top: 30px;
 }
 
 img{
+  margin-top: 5px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -205,6 +206,17 @@ img{
 }
 .project-dropdown-appear{
   display: block;
+}
+
+.mobile-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  margin: 20px 20px 0px 10px;
+  width: 92vw;
+  display: none;
 }
 
 @media screen and (max-width: 1000px){
@@ -243,12 +255,12 @@ img{
 
 }
 
-@media screen and (max-width: 775px){
+@media screen and (max-width: 600px){
 
   .project-overview{
     display: grid;
     grid-template-columns:1fr;
-    gap: 30px;
+    gap: 20px;
     margin: 0 200px;
   }
 
@@ -260,35 +272,81 @@ img{
     max-height: 350px;
   }
 
+  .project-links{
+    text-align: left;
+    margin-top: 15px;
+    }
+
+    .project-copy{
+      min-width: 300px;
+    }
+
+    .project-links a{
+      color: #0fff95;
+      padding-left: 0px;
+      padding-right: 15px;
+      font-size: 0.8rem;
+      text-decoration: underline;
+    }
+
 }
 
 @media screen and (max-width: 500px){
 
+  .mobile-nav{
+    display: flex;
+    font-size: 1.2rem;
+  }
+
+  .plus-button{
+    font-size: 3.2rem;
+  }
+
   img{
-    max-width: 100px;
+/* if I need to min heigh img */
   }
 
   main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    align-content: center;
-    margin: 0 40px;
-    height: 100vh;
-    padding: 0;
+
+    margin: 0 30px;
+
   }
   
   .intro-copy{
     min-width: 300px;
-    z-index: 1;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-    text-align: center;
-    padding: 0;
+  }
+
+  .bottom-bar-home{
+    display: none;
+  }
+
+  .top-bar{
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .copy{
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .project-overview{
+
+    margin: 0 15px;
+
+  }
+
+
+}
+
+@media screen and (max-width: 400px){
+
+  
+  .intro-copy{
+    min-width: 250px;
   }
 
 }
