@@ -3,3 +3,58 @@
 *::after {
   box-sizing: border-box;
 }
+
+:root{
+  --off-white: #eaedd5;
+  --black: #000000;
+  --avo: #697a21;
+
+}
+
+body {
+  background-color: var(--black);
+  color: var(--off-white);
+  font-family: 'Raleway', sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  color: var(--off-white);
+}
+
+.navigation{
+  background-color: transparent;
+  height: 100vh;
+}
+
+p.nav-item{
+  margin: 0px;
+}
+
+.top-bar {
+  padding: 15px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  font-size: 1.6rem;
+}
+
+.bottom-bar-home {
+  padding: 15px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  font-size: 1.6rem;
+
+}
