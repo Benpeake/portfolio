@@ -8,6 +8,7 @@
   --off-white: #eaedd5;
   --black: #000000;
   --avo: #697a21;
+  --green: #0fff95;
 
 }
 
@@ -15,12 +16,26 @@ body {
   background-color: var(--black);
   color: var(--off-white);
   font-family: 'Raleway', sans-serif;
-
+  display: flex;
+  flex-direction: column;
 }
 
 a {
   text-decoration: none;
   color: var(--off-white);
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2{
+  font-size: 1.8rem;
+}
+
+.copy{
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 
 .navigation{
@@ -56,5 +71,56 @@ p.nav-item{
   width: 100%;
   position: fixed;
   font-size: 1.6rem;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 200px;
+  height: 100vh;
+}
+
+.intro-copy{
+  min-width: 300px;
+}
+
+.project-1 {
+  background-color: var(--avo);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-overview{
+  display: grid;
+  grid-template-columns:1fr 2fr;
+  gap: 30px;
+  margin: 0 200px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  min-height: 300px;
+}
+
+.project-image{
+
 
 }
+
+.project-copy{
+  min-width: 400px;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  min-width: 300px;
+}
+
