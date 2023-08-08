@@ -245,6 +245,20 @@ img{
   display: flex;
 }
 
+.project-mobile-menu{
+  display: none;
+}
+
+.project-mobile-menu a{
+  color: var(--green);
+}
+
+
+.project-mobile-menu-appear{
+  display: block;
+}
+
+
 @media screen and (max-width: 1000px){
 
 
