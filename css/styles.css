@@ -95,6 +95,7 @@ p.nav-item{
 
 .top-bar {
   padding: 15px;
+  padding-bottom: 0px;
   background-color: transparent;
   display: flex;
   flex-direction: row;
@@ -103,33 +104,22 @@ p.nav-item{
   width: 100%;
   position: fixed;
   font-size: 1.6rem;
-  z-index: 2;
+  z-index: 3;
 }
 
 .bottom-bar-home {
   padding: 15px;
+  padding-top: 0px;
   background-color: transparent;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  height: 100vh;
+  bottom:0;
   width: 100%;
   position: fixed;
   font-size: 1.6rem;
-  z-index: 2;
-}
-
-.scroll-section{
-  /* scroll snap */
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  position: relative;
-  z-index: 3;
-  background-color: transparent;
-  height: 100vh;
-  width: 100%;
-  display: flex;
+  z-index: 1;
 }
 
 
@@ -143,7 +133,10 @@ main{
   margin: 0 260px;
   height: 100vh;
   padding: 0;
-}
+  /* scroll snap */
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  }
 
 .intro-copy{
   min-width: 300px;
@@ -154,6 +147,13 @@ main{
   width: 100%;
   text-align: center;
   padding: 0;
+}
+
+.background{
+  background-color: var(--avo);
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
 }
 
 .project-1 {
@@ -179,7 +179,6 @@ main{
   scroll-snap-align: start;
   flex-shrink: 0;
   position: relative;
-  z-index: 1;
 }
 
 .project-3 {
@@ -193,7 +192,6 @@ main{
   scroll-snap-align: start;
   flex-shrink: 0;
   position: relative;
-  z-index: 1;
 }
 
 .project-overview{
@@ -287,7 +285,6 @@ img{
   color: var(--green);
 }
 
-
 .mob-menu-apear{
   display: flex;
 }
@@ -300,14 +297,11 @@ img{
   color: var(--green);
 }
 
-
 .project-mobile-menu-appear{
   display: block;
 }
 
-
 @media screen and (max-width: 1000px){
-
 
   h1 {
     font-size: 2rem;
@@ -321,7 +315,6 @@ img{
     font-size: 1.2rem;
     font-weight: 300;
   }
-
 
   .top-bar {
     font-size: 1.2rem;
@@ -427,12 +420,10 @@ img{
 
   }
 
-
 }
 
 @media screen and (max-width: 400px){
 
-  
   .intro-copy{
     min-width: 250px;
   }
