@@ -9,7 +9,7 @@
   --black: #000000;
   --avo: #74776B;
   --green: #0fff95;
-  --rose: #lemon;
+  --rose: #697A21;
 }
 
 body {
@@ -219,6 +219,32 @@ img{
   display: none;
 }
 
+.mob-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  background-color: #000000;
+  z-index: 1;
+  font-size: 2rem;
+  padding: 80px 0px 10px 0px ;
+  text-align: center;
+  display: none;
+}
+
+.mobile-plus-rotate{
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+
+.mob-menu-apear{
+  display: flex;
+}
+
 @media screen and (max-width: 1000px){
 
 
@@ -295,11 +321,12 @@ img{
 
   .mobile-nav{
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    z-index: 2;
   }
 
   .plus-button{
-    font-size: 3.2rem;
+    font-size: 4.2rem;
   }
 
   img{
