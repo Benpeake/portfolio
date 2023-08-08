@@ -18,6 +18,11 @@ body {
   font-family: 'Raleway', sans-serif;
   display: flex;
   flex-direction: column;
+   /* scroll snap */
+  scroll-snap-type: y mandatory;
+  scroll-behavior: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
 }
 
 a {
@@ -118,6 +123,8 @@ main{
   margin: 0 260px;
   height: 100vh;
   padding: 0;
+   /* scroll snap */
+   scroll-snap-align: start;
 }
 
 .intro-copy{
@@ -138,6 +145,8 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* scroll snap */
+  scroll-snap-align: start;
 }
 
 .project-2{
@@ -238,6 +247,15 @@ img{
 .mobile-plus-rotate{
   transform: rotate(45deg);
   transform-origin: center;
+}
+
+.project-button{
+  cursor: pointer;
+}
+
+.link-active{
+  text-decoration: underline;
+  color: var(--green);
 }
 
 

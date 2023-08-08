@@ -11,6 +11,10 @@ projectButton.addEventListener('click', ()=>{
     projectDrop.classList.toggle('project-dropdown-appear')
 })
 
+projectButton.addEventListener('click', ()=>{
+    projectButton.classList.toggle('link-active')
+})
+
 mobileDisplayButton.addEventListener('click', ()=>{
     mobileMenu.classList.toggle('mob-menu-apear')
 })
@@ -21,5 +25,9 @@ mobilePlus.addEventListener('click', ()=>{
 
 projectSubMenu.addEventListener('click', ()=>{
     mobileProjects.classList.toggle('project-mobile-menu-appear')
+})
+
+projectSubMenu.addEventListener('click', ()=>{
+    projectSubMenu.classList.toggle('link-active')
 })
 
