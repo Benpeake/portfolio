@@ -12,6 +12,8 @@
   --rose: #697A21;
 }
 
+/* NAV and BODY*/
+
 body {
   background-color: var(--black);
   color: var(--off-white);
@@ -77,16 +79,16 @@ p.nav-item{
 }
 
 .nav-item{
-  border: 1.5px solid transparent;
+  border: 2px solid transparent;
   padding: 7.5px 15px; 
   border-radius: 20px;
-  transition: all 0.5s;
+  transition: all 0.75s;
   z-index: 1;
   
 }
 
 .nav-item-link:hover{
-  border: 1.5px solid #eaedd5;
+  border: 2px solid #eaedd5;
   border-radius: 20px;
 }
 
@@ -122,6 +124,47 @@ p.nav-item{
   font-size: 1.6rem;
   z-index: 3;
 }
+/* NAV and BODY*/
+
+/* INFO ABOUT */
+
+.about-me-section{
+  background-color: var(--black);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* scroll snap */
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+.about-and-skills{
+  display: grid;
+  grid-template-columns:1fr 4fr;
+  gap: 30px;
+  margin: 0 200px;
+  align-items: start;
+  justify-content: center;
+  align-content: center;
+  min-height: 300px;
+  z-index: 1;
+}
+
+.skills-list{
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-content: flex-start;
+  gap: 30px;
+}
+
+.skills-list ul{
+  margin-left: 0px;
+  padding-left: 0px;
+}
+/* INFO ABOUT */
 
 
 main{
@@ -373,10 +416,6 @@ img{
 
   .plus-button{
     font-size: 4.2rem;
-  }
-
-  img{
-/* if I need to min heigh img */
   }
 
   main{
