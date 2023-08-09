@@ -14,6 +14,10 @@
 
 /* NAV and BODY*/
 
+.tohide{
+  display: none;
+}
+
 body {
   background-color: var(--black);
   color: var(--off-white);
@@ -31,6 +35,7 @@ body {
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
 }
+
 
 a {
   text-decoration: none;
@@ -62,6 +67,19 @@ li a:hover{
 .copy{
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+.copy-small{
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.green{
+  color: var(--green);
 }
 
 .logo{
@@ -140,6 +158,22 @@ p.nav-item{
   flex-shrink: 0;
 }
 
+.about-me-section-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: start;
+  align-content: start;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  /* scroll snap */
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+
 .about-and-skills{
   display: grid;
   grid-template-columns:1fr 4fr;
@@ -150,7 +184,9 @@ p.nav-item{
   align-content: center;
   min-height: 300px;
   z-index: 1;
+  position: relative;
 }
+
 
 .skills-list{
   display: flex;
@@ -164,6 +200,23 @@ p.nav-item{
   margin-left: 0px;
   padding-left: 0px;
 }
+
+.job-title{
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-content: flex-start;
+  gap: 30px;
+}
+
+.job-details{
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-content: flex-start;
+  gap: 20px;
+}
+
 /* INFO ABOUT */
 
 
@@ -181,6 +234,7 @@ main{
   scroll-snap-align: start;
   flex-shrink: 0;
   }
+  
 
 .intro-copy{
   min-width: 300px;
@@ -319,7 +373,24 @@ img{
   display: block;
 }
 
+
 @media screen and (max-width: 1000px){
+
+  .about-and-skills{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 10px;
+    margin: 0 200px;
+  }
+
+  .copy-small{
+    font-size: 1rem;
+  }
+
+  .project-links a{
+    font-size: 1rem;
+  }
+
 
   h1 {
     font-size: 2rem;
@@ -354,6 +425,10 @@ img{
 }
 
 @media screen and (max-width: 600px){
+
+  .about-and-skills{
+    margin: 0 100px;
+  }
 
   .project-overview{
     display: grid;
