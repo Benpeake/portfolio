@@ -156,19 +156,7 @@ main{
   z-index: -1;
 }
 
-.project-1 {
-  background-color: var(--avo);
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* scroll snap */
-  scroll-snap-align: start;
-  flex-shrink: 0;
-}
-
-.project-2{
+.project {
   background-color: var(--black);
   height: 100vh;
   width: 100%;
@@ -178,20 +166,6 @@ main{
   /* scroll snap */
   scroll-snap-align: start;
   flex-shrink: 0;
-  position: relative;
-}
-
-.project-3 {
-  background-color: var(--avo);
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* scroll snap */
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  position: relative;
 }
 
 .project-overview{

@@ -31,3 +31,31 @@ projectSubMenu.addEventListener('click', ()=>{
     projectSubMenu.classList.toggle('link-active')
 })
 
+
+//Fetch JSON
+
+fetch('portfolio.json')
+    .then((response) => response.json())
+    .then(data => {
+
+        const projectTarget = document.querySelector('.json-section')
+
+        data.projects.forEach(project => {
+
+            projectTarget.innerHTML += `
+
+            <section class="project">
+            <div class="project-overview">
+                <div class="project-image"><img src="` + project.img + `" alt="image placeholder"></div>
+                <div class="project-copy copy">
+                    <h2 class="project-title">`+ project.title + `</h2>
+                    <p>`+ project.description +`</p>
+                    <P class="project-links"><a href="#">Read more</a><a href="#">View on Github</a></P>
+                </div>
+            </div>
+        </section>
+        `
+
+        });
+    })
+

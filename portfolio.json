@@ -1,0 +1,21 @@
+{
+"projects": [
+    {
+      "title": "Project 1",
+      "img": "images/img_temp2.png",
+      "description": "From JSON file... Nihil nobis repellat quis, illo voluptate asperiores animi cumque enim quaerat numquam quod placeat, velit veniam, voluptas at earum quia! At, magni.lorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, sit ex? Molestias eos earum libero sapiente officiis nisi aut asperiores!"
+    },
+
+    {
+        "title": "Project 2",
+        "img": "images/img_temp2.png",
+        "description": "From JSON file... Nihil nobis repellat quis, illo voluptate asperiores animi cumque enim quaerat numquam quod placeat, velit veniam, voluptas at earum quia! At, magni.lorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, sit ex? Molestias eos earum libero sapiente officiis nisi aut asperiores!"
+      },
+
+      {
+        "title": "Project 3",
+        "img": "images/img_temp2.png",
+        "description": "From JSON file... Nihil nobis repellat quis, illo voluptate asperiores animi cumque enim quaerat numquam quod placeat, velit veniam, voluptas at earum quia! At, magni.lorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, sit ex? Molestias eos earum libero sapiente officiis nisi aut asperiores!"
+      }
+  ]
+}
