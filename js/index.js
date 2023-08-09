@@ -71,5 +71,29 @@ fetch('portfolio.json')
 
         })
 
+        const projectDropMenuMob = document.querySelector('.project-mobile-menu')
+
+        let mobileProjectMenu = "<ul>"
+
+        data.projects.forEach(project =>{
+
+            mobileProjectMenu += `<li><a class = "mobile-project-link" href="#` + project.section + `">` + project.title + `</a></li>`
+
+            projectDropMenuMob.innerHTML = mobileProjectMenu + "</ul>"
+
+        })
+
+        const mobileProjectLink = document.querySelectorAll('.mobile-project-link')
+
+        document.querySelectorAll('.mobile-project-link').forEach(link =>{
+            link.addEventListener('click', ()=>{
+                mobileMenu.classList.remove('mob-menu-apear')
+                mobilePlus.classList.toggle('mobile-plus-rotate')
+            })
+        })
     })
+
+
+
+
 
