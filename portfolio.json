@@ -2,20 +2,30 @@
 "projects": [
     {
       "title": "Project 1",
-      "img": "images/img_temp2.png",
-      "description": "From JSON file... Nihil nobis repellat quis, illo voluptate asperiores animi cumque enim quaerat numquam quod placeat, velit veniam, voluptas at earum quia! At, magni.lorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, sit ex? Molestias eos earum libero sapiente officiis nisi aut asperiores!"
+      "img": "images/placeholder_image.png",
+      "description": "From JSON file... Nihil nobis repellat quis, illo voluptate asperiores animi cumque enim quaerat numquam quod placeat, velit veniam, voluptas at earum quia! At, magni.lorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, sit ex? Molestias eos earum libero sapiente officiis nisi aut asperiores!",
+      "section": "project-1"
     },
 
     {
         "title": "Project 2",
-        "img": "images/img_temp2.png",
-        "description": "From JSON file... Nihil nobis repellat quis, illo voluptate asperiores animi cumque enim quaerat numquam quod placeat, velit veniam, voluptas at earum quia! At, magni.lorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, sit ex? Molestias eos earum libero sapiente officiis nisi aut asperiores!"
+        "img": "images/placeholder_image.png",
+        "description": "From JSON file... Nihil nobis repellat quis, illo voluptate asperiores animi cumque enim quaerat numquam quod placeat, velit veniam, voluptas at earum quia! At, magni.lorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, sit ex? Molestias eos earum libero sapiente officiis nisi aut asperiores!",
+        "section": "project-2"
       },
 
       {
         "title": "Project 3",
-        "img": "images/img_temp2.png",
-        "description": "From JSON file... Nihil nobis repellat quis, illo voluptate asperiores animi cumque enim quaerat numquam quod placeat, velit veniam, voluptas at earum quia! At, magni.lorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, sit ex? Molestias eos earum libero sapiente officiis nisi aut asperiores!"
+        "img": "images/placeholder_image.png",
+        "description": "From JSON file... Nihil nobis repellat quis, illo voluptate asperiores animi cumque enim quaerat numquam quod placeat, velit veniam, voluptas at earum quia! At, magni.lorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, sit ex? Molestias eos earum libero sapiente officiis nisi aut asperiores!",
+        "section": "project-3"
+      },
+
+      {
+        "title": "Project 4",
+        "img": "images/placeholder_image.png",
+        "description": "From JSON file... Nihil nobis repellat quis, illo voluptate asperiores animi cumque enim quaerat numquam quod placeat, velit veniam, voluptas at earum quia! At, magni.lorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, sit ex? Molestias eos earum libero sapiente officiis nisi aut asperiores!",
+        "section": "project-4"
       }
   ]
 }
