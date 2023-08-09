@@ -76,7 +76,7 @@ p.nav-item{
 }
 
 .nav-item{
-  border: 1px solid transparent;
+  border: 1.5px solid transparent;
   padding: 7.5px 15px; 
   border-radius: 20px;
   transition: all 0.5s;
@@ -85,7 +85,7 @@ p.nav-item{
 }
 
 .nav-item-link:hover{
-  border: 1px solid #eaedd5;
+  border: 1.5px solid #eaedd5;
   border-radius: 20px;
 }
 
@@ -369,9 +369,26 @@ img{
       text-decoration: underline;
     }
 
+    .bottom-bar-home{
+      display: none;
+    }
+
 }
 
 @media screen and (max-width: 500px){
+
+  .project-overview{
+    padding-top: 40px;
+  }
+
+  .mobile-nav{
+    margin: 0px 20px 0px 10px;
+  }
+
+  .mobile-nav p{
+    padding-top: 0px;
+  }
+  
 
   .mobile-nav{
     display: flex;
@@ -395,10 +412,6 @@ img{
   
   .intro-copy{
     min-width: 300px;
-  }
-
-  .bottom-bar-home{
-    display: none;
   }
 
   .top-bar{
