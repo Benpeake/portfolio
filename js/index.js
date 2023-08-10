@@ -94,6 +94,49 @@ fetch('portfolio.json')
     })
 
 
+// cv pagination indexing
 
+const cv1 = document.querySelector('.cv1')
+const cv2 = document.querySelector('.cv2')
+const cv3 = document.querySelector('.cv3')
+const cv4 = document.querySelector('.cv4')
+
+
+const pageTarget = document.querySelector('.cvpage')
+
+window.addEventListener("pageshow", ()=>{
+    pageTarget.innerHTML = '<a class="footerlink cvpage green" href="#"> 1/4 </a></div>'
+});
+
+function cvInViewport() {
+    const bounding = cv1.getBoundingClientRect();
+    const bounding2 = cv2.getBoundingClientRect();
+    const bounding3 = cv3.getBoundingClientRect();
+    const bounding4 = cv4.getBoundingClientRect();
+
+    if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) 
+    {
+        pageTarget.innerHTML = '<a class="footerlink cvpage green" href="#"> 1/4 </a></div>'
+
+    } else if (bounding2.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    {
+        pageTarget.innerHTML = '<a class="footerlink cvpage green" href="#"> 2/4 </a></div>'
+
+    } else if (bounding3.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    {
+        pageTarget.innerHTML = '<a class="footerlink cvpage green" href="#"> 3/4 </a></div>'
+
+    } else if (bounding4.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    {
+        pageTarget.innerHTML = '<a class="footerlink cvpage green" href="#"> 4/4 </a></div>'
+        
+    } else {
+        pageTarget.innerHTML = "Instagram"
+    }
+}
+
+ document.querySelector('.snap-scroll').addEventListener('scroll', () => {
+    cvInViewport();
+})
 
 
