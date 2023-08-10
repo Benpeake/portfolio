@@ -22,6 +22,15 @@ body {
   background-color: var(--black);
   color: var(--off-white);
   font-family: 'Raleway', sans-serif;
+  cursor: url('/images/down_cursor.png'), auto;	
+}
+
+.up-cursor{
+  cursor: url('/images/up_cursor.png'), auto;	
+}
+
+.down-cursor{
+  cursor: url('/images/down_cursor.png'), auto;	
 }
 
 .snap-scroll{
@@ -40,6 +49,7 @@ body {
 a {
   text-decoration: none;
   color: var(--off-white);
+  cursor: pointer;
 }
 
 h1 {

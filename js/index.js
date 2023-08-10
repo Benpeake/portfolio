@@ -140,3 +140,16 @@ function cvInViewport() {
 })
 
 
+// cursor switch
+
+
+const halfway = window.innerHeight / 2
+
+document.addEventListener('mousemove', function(mouse) {
+    if (mouse.clientY < halfway) {
+      document.body.style.cursor = `url('/images/up_cursor.png'), auto`
+    } else {
+      document.body.style.cursor = `url('/images/down_cursor.png'), auto`
+    }
+  })
+
