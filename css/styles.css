@@ -56,6 +56,10 @@ h1 {
   font-size: 2.4rem;
 }
 
+.big{
+  font-size: 2.4rem;
+}
+
 h2{
   font-size: 1.8rem;
 }
@@ -90,6 +94,11 @@ li a:hover{
 
 .green{
   color: var(--green);
+}
+
+.green-underlined{
+  color: var(--green);
+  text-decoration: underline;
 }
 
 .logo{
@@ -518,6 +527,10 @@ img{
   }
 
   h1 {
+    font-size: 1.8rem;
+  }
+
+  .big {
     font-size: 1.8rem;
   }
 

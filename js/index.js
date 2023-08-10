@@ -44,7 +44,7 @@ fetch('portfolio.json')
 
             projectTarget.innerHTML += 
 
-            `
+        `
         <section class="project">
             <div id = "`+ project.section +`" class="project-overview">
                 <div class="project-image"><img src="` + project.img + `" alt="image placeholder"></div>
@@ -117,26 +117,32 @@ function cvInViewport() {
     if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) 
     {
         pageTarget.innerHTML = '<a class="footerlink cvpage green" href="#"> 1/4 </a></div>'
+        infoTarget.classList.add('green-underlined')
 
     } else if (bounding2.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight))
     {
         pageTarget.innerHTML = '<a class="footerlink cvpage green" href="#"> 2/4 </a></div>'
+        infoTarget.classList.add('green-underlined')
 
     } else if (bounding3.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight))
     {
         pageTarget.innerHTML = '<a class="footerlink cvpage green" href="#"> 3/4 </a></div>'
+        infoTarget.classList.add('green-underlined')
 
     } else if (bounding4.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight))
     {
         pageTarget.innerHTML = '<a class="footerlink cvpage green" href="#"> 4/4 </a></div>'
+        infoTarget.classList.add('green-underlined')
         
     } else {
         pageTarget.innerHTML = "Instagram"
+        infoTarget.classList.remove('green-underlined')
     }
 }
 
  document.querySelector('.snap-scroll').addEventListener('scroll', () => {
     cvInViewport();
+
 })
 
 
@@ -152,4 +158,33 @@ document.addEventListener('mousemove', function(mouse) {
       document.body.style.cursor = `url('/images/down_cursor.png'), auto`
     }
   })
+
+  //info style
+
+  const infoTarget = document.querySelector('.info-target')
+
+  window.addEventListener("pageshow", ()=>{
+    infoTarget.classList.add('green-underlined')
+});
+
+ //Email highlight
+
+ const emailPage = document.querySelector('.thanks')
+ const emailAdress = document.querySelector('.email-adress')
+
+ function emailHighlight() {
+
+    const bounding =  emailPage.getBoundingClientRect();
+
+    if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) 
+    {
+        emailAdress.classList.add('green')
+    } else {
+        emailAdress.classList.remove('green')
+    }
+}
+
+document.querySelector('.snap-scroll').addEventListener('scroll', () => {
+    emailHighlight();
+})
 
