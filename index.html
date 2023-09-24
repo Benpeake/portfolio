@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Template</title>
+    <title>Ben Peake Portfolio</title>
 
     <meta name="description" content="Template HTML file">
     <meta name="author" content="iO Academy">
@@ -32,7 +32,7 @@
     <div class="snap-scroll">
 <!-- MOBILE NAVIGATION START -->
     <navigation class="mobile-nav"> 
-        <p class="nav-item"><a href ="index.html" class="logo">Ben Peake</a></p>
+        <p class="nav-item"><a href ="index.html" class="logo underline">Ben Peake</a></p>
         <div class="mobile-plus-no-rotate"><a class="plus-button" href="#">+</a></div>
     </navigation>
 <!-- MOBILE NAVIGATION START -->
@@ -51,17 +51,22 @@
         </div>
 <!-- PROJECTS DROP DOWN END-->
             <p class="nav-item"><a href="index.html" class="logo">Ben Peake</a></p>
-            <div class="nav-item nav-item-link"><a href="info.html">Info / CV</a></div>
+            <div class="nav-item nav-item-link"><a href="pdf/Ben_Peake_CV.pdf" target="_blank">CV</a></div>
         </nav>
         <nav class="bottom-bar-home">
-            <div class="nav-item nav-item-link"><a class="footerlink email-adress" href="#">Email@gmail.com</a></div>
-            <div class="nav-item nav-item-link"><a class="footerlink" href="#">Instagram</a></div>
+            <div class="nav-item nav-item-link"><a class="footerlink email-adress" href="mailto:benpeake.dev@gmail.com" target="_blank">Email</a></div>
+            <div class="nav-item nav-item-link"><a class="footerlink" href="https://github.com/Benpeake" target="_blank">Github</a></div>
         </nav>
 <!-- INTRO PAGE START -->
         <main id="top-of-site" class="down-cursor">
             <div class="intro-copy">
-                <h1>Hello, I'm <span class="green">Ben</span>, welcome to my portfolio.</h1>
-                <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sunt a expedita temporibus, eaque quibusdam sapiente numquam deserunt, illum libero sit excepturi assumenda, facilis voluptates nam corporis dolorem vero mollitia.</p>
+                <h1 class="heading green">Hello, I'm Ben...</h1>
+                <ul class="copy">
+                <li class="copy">keen problem solver and enthusiastic learner.</li>
+                <li class="copy">Developer, graphic designer, illustrator and street food business owner.</li>
+                <li class="copy">Full stack boot-camp grad with iO Academy.</li>
+                <li class="copy">Passionate about how technology can improve everyday life.</li>
+                </ul>
             </div>
         </main>
 <!-- INTRO PAGE END -->
@@ -74,31 +79,31 @@
 <!-- PROJECT END -->
 
 
-<section class="project thanks up-cursor">
-    <div class="intro-copy">
-        <h2 class="big"><span class="green">Thanks</span> for your time.</h2>
+<section class="end-page thanks" id="exit-page">
+    <div class="exit-copy">
+        <h2 class="heading">Thanks for your time.</h2>
         <p class="copy">Please email me if you're interested in getting in touch.</p>
+        <a class="copy green mobemail" href="mailto:benpeake.dev@gmail.com" target="_blank">Email</a>
     </div>
 </section>
 
 
 <!-- MOB MENU START-->
     <div class="mob-menu">
-        <div>
-        <ul>
-            <li><a href="info.html">Info / CV</a></li>
-            <li><a class="projects-submenu" href="#">Projects</a></li>
-        </ul>
-        <div class="project-mobile-menu">
-
-            <!-- POPULATED FROM JSON -->
-
+        <div class="mobile_menu_pop">
+            <div class="mobile_menu">
+                <ul>
+                    <li><a href="pdf/Ben_Peake_CV.pdf" target="_blank">CV</a></li>
+                    <li><a class="projects-submenu" href="#">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottomMob">
+            <p><a class = "mobile-project-link" href="https://github.com/Benpeake" target="_blank">Github</a><p>
+            <p><a class = "mobile-project-link" href="mailto:benpeake.dev@gmail.com" target="_blank">Email</a></p>
         </div>
         </div>
-        <p><a href="">Email@gmail.com</a></p>
-    </div>
 <!-- MOB MENU END-->
-
     </div>
 </body>
 </html>
