@@ -5,7 +5,7 @@
 }
 
 :root{
-  --off-white: #F4F6F4;
+  --off-white: #FDE8E9;
   --black: #1D1E18;
   --avo: #74776B;
   --green: #35FF69;
@@ -169,14 +169,15 @@ main{
   
 
 .intro-copy{
-  min-width: 400px;
-  z-index: 1;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding: 0;
+  display: grid;
+  grid-template-columns:2fr 1fr;
+  gap: 30px;
   margin: 0 200px;
-  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  min-height: 300px;
+  z-index: 1;
 }
 
 .exit-copy{

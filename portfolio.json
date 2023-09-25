@@ -1,9 +1,9 @@
 {
 "projects": [
     {
-      "title": "Project 1",
-      "img": "images/placeholder_image.png",
-      "description": "From JSON file... Nihil nobis repellat quis, illo voluptate asperiores animi cumque enim quaerat numquam quod placeat, velit veniam, voluptas at earum quia! At, magni.lorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, sit ex? Molestias eos earum libero sapiente officiis nisi aut asperiores!",
+      "title": "Collection App",
+      "img": "images/collection_app_image.png",
+      "description": "I Built a simple collection app that allows a user to maintain and show off their record collection. Created using OOP principles with vanilla PHP and a MySQL database, without a framework in order to gain a deeper understanding of CRUD operations. This was an individual project with pull request reviews required upon the completion of each story and is fully unit tested.",
       "section": "project-1"
     },
 
