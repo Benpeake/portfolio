@@ -3,7 +3,7 @@
     {
       "title": "Collection App",
       "img": "images/collection_app_image.png",
-      "description": "I Built a simple collection app that allows a user to maintain and show off their record collection. Created using OOP principles with vanilla PHP and a MySQL database without a framework in order to gain a deeper understanding of CRUD operations. This was an individual project with pull request reviews required upon the completion of each story and is fully unit tested.",
+      "description": "I Built a simple collection app that allows a user to maintain and show off their record collection. Created using OOP principles with vanilla PHP and a MySQL database, and without a framework in order to gain a deeper understanding of CRUD operations. This was an individual project with pull request reviews required upon the completion of each story and is fully unit tested.",
       "section": "project-1"
     },
 

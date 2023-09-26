@@ -138,24 +138,3 @@ document.addEventListener('mousemove', function (mouse) {
     }
 });
 
- //Email highlight
-
- const emailPage = document.querySelector('.thanks')
- const emailAdress = document.querySelector('.email-adress')
-
- function emailHighlight() {
-
-    const bounding =  emailPage.getBoundingClientRect();
-
-    if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) 
-    {
-        emailAdress.classList.add('green')
-    } else {
-        emailAdress.classList.remove('green')
-    }
-}
-
-document.querySelector('.snap-scroll').addEventListener('scroll', () => {
-    emailHighlight();
-})
-
