@@ -138,3 +138,22 @@ document.addEventListener('mousemove', function (mouse) {
     }
 });
 
+//day - night mode
+
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', () => {
+  const dayModeStylesheet = document.getElementById('day-mode-stylesheet');
+  const nightModeStylesheet = document.getElementById('night-mode-stylesheet');
+
+  if (checkbox.checked) {
+    // Enable day mode
+    dayModeStylesheet.disabled = false;
+    nightModeStylesheet.disabled = true;
+  } else {
+    // Enable night mode
+    dayModeStylesheet.disabled = true;
+    nightModeStylesheet.disabled = false;
+  }
+});
+

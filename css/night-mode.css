@@ -89,7 +89,7 @@ li a:hover{
 }
 
 .logo{
-  font-weight: 300;
+  font-weight: 400;
   color: var(--green);
   text-decoration: underline;
   text-underline-offset: 0.9rem;
@@ -426,13 +426,13 @@ img{
 .slider:before {
   background-color: transparent;
   border: 2px solid var(--off-white);
-  bottom: 7.5px;
+  bottom: 8.5px;
   content: "";
-  height: 32px;
-  left: 12px;
+  height: 30px;
+  left: 11px;
   position: absolute;
   transition: .4s;
-  width: 32px;
+  width: 30px;
 }
 
 input:checked + .slider {
@@ -440,7 +440,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(40px);
+  transform: translateX(44px);
 }
 
 .slider.round {
