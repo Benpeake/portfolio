@@ -33,7 +33,6 @@ projectSubMenu.addEventListener('click', () =>{
 
 
 //Fetch JSON
-
 fetch('portfolio.json')
     .then((response) => response.json())
     .then(data => {
@@ -113,6 +112,9 @@ const exitPage = document.getElementById('exit-page');
 
 const halfway = window.innerHeight / 2;
 
+let cursorUp = `url('images/up_cursor.png'), auto`
+let cursorDown = `url('images/down_cursor.png'), auto`
+
 document.addEventListener('mousemove', function (mouse) {
     // Get the bounding rectangles for introPage and exitPage
     const introRect = introPage.getBoundingClientRect();
@@ -123,37 +125,41 @@ document.addEventListener('mousemove', function (mouse) {
         mouse.clientY >= introRect.top && mouse.clientY <= introRect.bottom
     ) {
         // Mouse is over introPage, use down_cursor.png
-        document.body.style.cursor = `url('images/down_cursor.png'), auto`;
+        document.body.style.cursor = cursorDown
     } else if (
         mouse.clientY >= exitRect.top && mouse.clientY <= exitRect.bottom
     ) {
         // Mouse is over exitPage, use up_cursor.png
-        document.body.style.cursor = `url('images/up_cursor.png'), auto`;
+        document.body.style.cursor = cursorUp 
     } else if (mouse.clientY < halfway) {
         // Mouse is above halfway and not over introPage or exitPage
-        document.body.style.cursor = `url('images/up_cursor.png'), auto`;
+        document.body.style.cursor = cursorUp 
     } else {
         // Mouse is below halfway and not over exitPage
-        document.body.style.cursor = `url('images/down_cursor.png'), auto`;
+        document.body.style.cursor = cursorDown
     }
 });
 
 //day - night mode
-
 const checkbox = document.getElementById('checkbox');
 
 checkbox.addEventListener('change', () => {
-  const dayModeStylesheet = document.getElementById('day-mode-stylesheet');
-  const nightModeStylesheet = document.getElementById('night-mode-stylesheet');
+  const dayModeStylesheet = document.getElementById('day-mode-stylesheet')
+  const nightModeStylesheet = document.getElementById('night-mode-stylesheet')
 
   if (checkbox.checked) {
     // Enable day mode
-    dayModeStylesheet.disabled = false;
-    nightModeStylesheet.disabled = true;
+    dayModeStylesheet.disabled = false
+    nightModeStylesheet.disabled = true
+    cursorUp = `url('images/up_cursor_day.png'), auto`
+    cursorDown = `url('images/down_cursor_day.png'), auto`
+ 
   } else {
     // Enable night mode
-    dayModeStylesheet.disabled = true;
-    nightModeStylesheet.disabled = false;
+    dayModeStylesheet.disabled = true
+    nightModeStylesheet.disabled = false
+    cursorUp = `url('images/up_cursor.png'), auto`
+    cursorDown = `url('images/down_cursor.png'), auto`
   }
 });
 
