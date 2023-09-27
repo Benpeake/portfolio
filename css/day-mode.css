@@ -340,14 +340,6 @@ img{
   display: none;
 }
 
-.mobile_menu_pop{
-}
-
-.mobile-plus-rotate{
-  transform: rotate(45deg);
-  transform-origin: center;
-}
-
 .project-button{
   cursor: pointer;
 }
@@ -448,6 +440,18 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.mob-logo{
+    margin-left: 20px;
+}
+
+.hide{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+
+  }
 
 
 
@@ -491,8 +495,16 @@ input:checked + .slider:before {
   }
 
   .plus-button{
+    transform: rotate(45deg);
     font-size: 6rem;
-    font-weight: 200;
+    font-weight: 100;
+  }
+
+  .mobile-plus-rotate{
+    font-size: 6rem;
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: transform 0.3s ease;
   }
 
   .top-bar{
@@ -507,7 +519,6 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 760px){
-
 
   .project-overview{
     display: grid;
