@@ -140,26 +140,43 @@ document.addEventListener('mousemove', function (mouse) {
     }
 });
 
-//day - night mode
+//day and night mode
 const checkbox = document.getElementById('checkbox');
+const dayModeStylesheet = document.getElementById('day-mode-stylesheet');
+const nightModeStylesheet = document.getElementById('night-mode-stylesheet');
+
+// Add a transition effect to the stylesheets
+dayModeStylesheet.setAttribute('rel', 'stylesheet');
+nightModeStylesheet.setAttribute('rel', 'stylesheet');
+dayModeStylesheet.classList.add('fade');
+nightModeStylesheet.classList.add('fade');
 
 checkbox.addEventListener('change', () => {
-  const dayModeStylesheet = document.getElementById('day-mode-stylesheet')
-  const nightModeStylesheet = document.getElementById('night-mode-stylesheet')
-
   if (checkbox.checked) {
-    // Enable day mode
-    dayModeStylesheet.disabled = false
-    nightModeStylesheet.disabled = true
     cursorUp = `url('images/up_cursor_day.png'), auto`
     cursorDown = `url('images/down_cursor_day.png'), auto`
- 
+    // Enable day mode with a delay
+    nightModeStylesheet.classList.add('fade-out');
+    setTimeout(() => {
+      nightModeStylesheet.disabled = true;
+      dayModeStylesheet.disabled = false;
+      dayModeStylesheet.classList.remove('fade-in');
+      setTimeout(() => {
+        dayModeStylesheet.classList.add('fade-in');
+      }, 0);
+    }, 200); 
   } else {
-    // Enable night mode
-    dayModeStylesheet.disabled = true
-    nightModeStylesheet.disabled = false
     cursorUp = `url('images/up_cursor.png'), auto`
     cursorDown = `url('images/down_cursor.png'), auto`
+    // Enable night mode with a delay
+    dayModeStylesheet.classList.add('fade-out');
+    setTimeout(() => {
+      dayModeStylesheet.disabled = true;
+      nightModeStylesheet.disabled = false;
+      nightModeStylesheet.classList.remove('fade-in');
+      setTimeout(() => {
+        nightModeStylesheet.classList.add('fade-in');
+      }, 0);
+    }, 200); 
   }
 });
-

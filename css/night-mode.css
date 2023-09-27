@@ -110,22 +110,19 @@ li a:hover{
 }
 
 p.nav-item{
-  margin: 0px;
+  margin: 0;
 }
 
 .nav-item{
-  border: 2px solid transparent;
-  padding: 7.5px 15px; 
-  border-radius: 20px;
   transition: all 0.75s;
   z-index: 1;
   font-size: 2rem;
-  
+  margin: 10px 10px;
 }
 
 .nav-item-link:hover{
-  border: 2px solid var(--off-white);
-  border-radius: 20px;
+    color: var(--green);
+    cursor: pointer;
 }
 
 .project-copy h2{
@@ -426,13 +423,13 @@ img{
 .slider:before {
   background-color: transparent;
   border: 2px solid var(--off-white);
-  bottom: 8.5px;
+  bottom: 7.5px;
   content: "";
-  height: 30px;
+  height: 32px;
   left: 11px;
   position: absolute;
   transition: .4s;
-  width: 30px;
+  width: 32px;
 }
 
 input:checked + .slider {
