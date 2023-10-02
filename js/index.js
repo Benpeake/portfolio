@@ -121,7 +121,7 @@ fetch('portfolio.json')
                 <div class="project-copy copy">
                     <h2 class="project-title green">`+ project.title + `</h2>
                     <p class="project-description">`+ project.description +`</p>
-                    <P class="project-links"><a href="#">Live version</a><a href="#">Github</a></P>
+                    <P class="project-links"><a href="`+ project.livelink +`" target="__blank">Live version</a><a href="`+ project.github +` "target="__blank">Github</a></P>
                 </div>
             </div>
         </section>
