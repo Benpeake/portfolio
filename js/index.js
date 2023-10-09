@@ -1,56 +1,56 @@
-const projectButton = document.querySelector('.project-button')
-const projectDrop = document.querySelector('.project-dropdown')
+const projectButton = document.querySelector('.project-button');
+const projectDrop = document.querySelector('.project-dropdown');
+const mobileDisplayButton = document.querySelector('.plus-button');
+const mobileMenu = document.querySelector('.mob-menu');
+const mobilePlus = document.querySelector('.mobile-plus-no-rotate');
+const projectSubMenu = document.querySelector('.projects-submenu');
+const mobileProjects = document.querySelector('.project-mobile-menu');
 
-const mobileDisplayButton = document.querySelector('.plus-button')
-const mobileMenu = document.querySelector('.mob-menu')
-const mobilePlus = document.querySelector('.mobile-plus-no-rotate')
-const projectSubMenu = document.querySelector('.projects-submenu')
-const mobileProjects = document.querySelector('.project-mobile-menu')
-
-
-//PRE-LOAD DAY MODE
 const dayModeStylesheet = document.createElement('link');
 dayModeStylesheet.rel = 'stylesheet';
 dayModeStylesheet.href = 'css/day-mode.css';
-dayModeStylesheet.id = 'day-mode-styleshee';
+dayModeStylesheet.id = 'day-mode-stylesheet';
 
-// Preload the CSS file
-dayModeStylesheet.onload = function() {
-  // Apply the night mode styles once the CSS file is loaded
-  document.head.appendChild(dayModeStylesheet);
-};
-
-// Add the preload link to the document head
-document.head.appendChild(dayModeStylesheet);
-
-//PRE-LOAD NIGHT MODE
 const nightModeStylesheet = document.createElement('link');
 nightModeStylesheet.rel = 'stylesheet';
 nightModeStylesheet.href = 'css/night-mode.css';
-nightModeStylesheet.id = 'night-mode-styleshee';
+nightModeStylesheet.id = 'night-mode-stylesheet';
 
-// Preload the CSS file
-nightModeStylesheet.onload = function() {
-  // Apply the night mode styles once the CSS file is loaded
-  document.head.appendChild(nightModeStylesheet);
-};
-
-// Add the preload link to the document head
+// Add the preload links to the document head
+document.head.appendChild(dayModeStylesheet);
 document.head.appendChild(nightModeStylesheet);
 
-//DAY / NIGHT MODE...
+// Function to set the initial mode based on browser preferences
+function setInitialMode() {
+  const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const checkbox = document.getElementById('checkbox');
+  
+  // Check if the browser prefers dark mode
+  if (prefersDarkMode) {
+    // Check if user preference is already saved in localStorage
+    const userPreference = localStorage.getItem('userModePreference');
+    if (userPreference !== 'day') {
+      // Avoid toggling the checkbox if it's already set to night mode
+      checkbox.checked = true; // Night mode by default
+    }
+  }
+}
+
+// Call the function to set the initial mode
+setInitialMode();
+
+// DAY / NIGHT MODE...
 const checkbox = document.getElementById('checkbox');
 
-// Add a transition effect to the stylesheets
-dayModeStylesheet.setAttribute('rel', 'stylesheet');
-nightModeStylesheet.setAttribute('rel', 'stylesheet');
-dayModeStylesheet.classList.add('fade');
-nightModeStylesheet.classList.add('fade');
+checkbox.addEventListener('click', () => {
+  const isDayMode = checkbox.checked;
 
-checkbox.addEventListener('change', () => {
-  if (checkbox.checked) {
-    cursorUp = `url('images/up_cursor_day.png'), auto`
-    cursorDown = `url('images/down_cursor_day.png'), auto`
+  // Save user preference in localStorage
+  localStorage.setItem('userModePreference', isDayMode ? 'day' : 'night');
+
+  if (isDayMode) {
+    cursorUp = `url('images/up_cursor_day.png'), auto`;
+    cursorDown = `url('images/down_cursor_day.png'), auto`;
     // Enable day mode with a delay
     nightModeStylesheet.classList.add('fade-out');
     setTimeout(() => {
@@ -62,8 +62,8 @@ checkbox.addEventListener('change', () => {
       }, 0);
     }, 200); 
   } else {
-    cursorUp = `url('images/up_cursor.png'), auto`
-    cursorDown = `url('images/down_cursor.png'), auto`
+    cursorUp = `url('images/up_cursor.png'), auto`;
+    cursorDown = `url('images/down_cursor.png'), auto`;
     // Enable night mode with a delay
     dayModeStylesheet.classList.add('fade-out');
     setTimeout(() => {
@@ -76,6 +76,13 @@ checkbox.addEventListener('change', () => {
     }, 200); 
   }
 });
+
+// Add a transition effect to the stylesheets
+dayModeStylesheet.setAttribute('rel', 'stylesheet');
+nightModeStylesheet.setAttribute('rel', 'stylesheet');
+dayModeStylesheet.classList.add('fade');
+nightModeStylesheet.classList.add('fade');
+
 
 
 projectButton.addEventListener('click', () =>{
