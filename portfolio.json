@@ -2,8 +2,8 @@
 "projects": [
     {
       "title": "Colorator",
-      "img": "images/collection_app_image.png",
-      "description": "A self-initiated project to build and design a colour palette builder and manager. I used React for the front-end, Laravel to create an API that manages users saved palettes and an external free API to fetch information on specific colours. The application allows a user to randomly generate a colour palette, along with numerous additional functionality to control customisation in order to quickly create their ideal palette. The colorator API is fully tested using Laravels testing capabilities.",
+      "img": "images/colorator.gif",
+      "description": "A self-initiated project to build and design a colour palette builder and manager. I used React for the front-end, Laravel to create an API that manages users saved palettes and an external free API to fetch information on specific colours. The application allows a user to randomly generate a colour palette, along with numerous additional functionality to control customisation in order to quickly create and store their ideal palette. The colorator API is fully tested using Laravels testing capabilities.",
       "section": "project-1",
       "livelink": "https://colorator-fe.2023-benp.dev.io-academy.uk/",
       "github": "https://github.com/Benpeake/colorator"
@@ -16,16 +16,7 @@
       "section": "project-2",
       "livelink": "https://2023-benp.dev.io-academy.uk/collection/index.php",
       "github": "https://github.com/Benpeake/collection"
-    },
-
-      {
-        "title": "Project 3",
-        "img": "images/placeholder_image.png",
-        "description": "From JSON file... Nihil nobis repellat quis, illo voluptate asperiores animi cumque enim quaerat numquam quod placeat, velit veniam, voluptas at earum quia! At, magni.lorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, sit ex? Molestias eos earum libero sapiente officiis nisi aut asperiores!",
-        "section": "project-3",
-        "live-link": "..",
-        "git-hub": ".."
-      }
+    }
       
   ]
 }
