@@ -16,7 +16,7 @@ nightModeStylesheet.rel = 'stylesheet';
 nightModeStylesheet.href = 'css/night-mode.css';
 nightModeStylesheet.id = 'night-mode-stylesheet';
 
-// Add the preload links to the document head
+// pre-load CSS
 document.head.appendChild(dayModeStylesheet);
 document.head.appendChild(nightModeStylesheet);
 
@@ -36,7 +36,6 @@ function setInitialMode() {
   }
 }
 
-// Call the function to set the initial mode
 setInitialMode();
 
 // DAY / NIGHT MODE...
