@@ -1,19 +1,19 @@
 {
 "projects": [
     {
-      "title": "Collection App",
+      "title": "Colorator",
       "img": "images/collection_app_image.png",
-      "description": "I Built a simple collection app that allows a user to maintain and show off their record collection. Created using OOP principles with vanilla PHP and a MySQL database, and without a framework in order to gain a deeper understanding of CRUD operations. This was an individual project with pull request reviews required upon the completion of each story and is fully unit tested.",
+      "description": "A self-initiated project to build and design a colour palette builder and manager. I used React for the front-end, Laravel to create an API that manages users saved palettes and an external free API (thecolorapi) to fetch information on specific colours. The application allows a user to randomly generate a colour palette, add and remove colour panels to tailor the number of colours within a palette (2-5), move panels to customise the palette composition, lock-in colour panels so they are exempt from the random generator, specify a colour via hex code input, or colour picker, and retrieve a mono-chromed palette based of a specific shade. The colorator API is fully tested using Laravels testing capabilities",
       "section": "project-1",
-      "livelink": "https://2023-benp.dev.io-academy.uk/collection/index.php",
-      "github": "https://github.com/Benpeake/collection"
+      "livelink": "https://colorator-fe.2023-benp.dev.io-academy.uk/",
+      "github": "https://github.com/Benpeake/colorator"
     },
 
     {
       "title": "Collection App",
       "img": "images/collection_app_image.png",
       "description": "I Built a simple collection app that allows a user to maintain and show off their record collection. Created using OOP principles with vanilla PHP and a MySQL database, and without a framework in order to gain a deeper understanding of CRUD operations. This was an individual project with pull request reviews required upon the completion of each story and is fully unit tested.",
-      "section": "project-1",
+      "section": "project-2",
       "livelink": "https://2023-benp.dev.io-academy.uk/collection/index.php",
       "github": "https://github.com/Benpeake/collection"
     },
