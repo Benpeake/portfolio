@@ -44,9 +44,13 @@ a {
 
 
 .project-title{
-  font-size: 2rem;
-  font-weight: 300;
-  
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+a .project-links.central{
+  text-align: center;
+  padding-left: 0;
 }
 
 
@@ -90,10 +94,10 @@ li a:hover{
 }
 
 .logo{
-  font-weight: 400;
+  font-weight: 600;
   color: var(--green);
-  text-decoration: underline;
-  text-underline-offset: 0.9rem;
+  text-decoration:  underline 4px;
+  text-underline-offset: 0.8rem;
 }
 
 .email-underline{

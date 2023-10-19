@@ -43,10 +43,15 @@ a {
 
 
 .project-title{
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
-  
 }
+
+.project-links.central{
+  text-align: center;
+  padding-left: 0;
+}
+
 
 ul{
   list-style-type: none;
@@ -88,10 +93,10 @@ li a:hover{
 }
 
 .logo{
-  font-weight: 500;
+  font-weight: 600;
   color: var(--green);
-  text-decoration: underline 2px;
-  text-underline-offset: 0.9rem;
+  text-decoration:  underline 4px;
+  text-underline-offset: 0.8rem;
 }
 
 .email-underline{
