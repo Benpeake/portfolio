@@ -82,8 +82,6 @@ nightModeStylesheet.setAttribute('rel', 'stylesheet');
 dayModeStylesheet.classList.add('fade');
 nightModeStylesheet.classList.add('fade');
 
-
-
 projectButton.addEventListener('click', () =>{
     projectDrop.classList.toggle('project-dropdown-appear')
 })
