@@ -461,7 +461,7 @@ input:checked + .slider:before {
   .self-portrait{
     height: 80%;
     width: 80%;
-    min-width: 200px;
+    min-width: 250px;
   }
 
 
@@ -485,6 +485,11 @@ input:checked + .slider:before {
 
 @media screen and (max-width: 900px){
 
+  .project-title{
+    font-size: 2.7rem;
+    font-weight: 400;
+  }
+
   .project-overview{
     padding-top: 40px;
   }
@@ -506,8 +511,10 @@ input:checked + .slider:before {
 
   .plus-button{
     transform: rotate(45deg);
-    font-size: 6rem;
-    font-weight: 100;
+    font-size: 8rem;
+    font-weight: 200;
+    padding-right: 0;
+    margin-right: 0;
   }
 
   .mobile-plus-rotate{
@@ -526,9 +533,14 @@ input:checked + .slider:before {
     font-weight: 300;
   }
 
+  .bottom-bar-home{
+    display: none;
+  }
+
+
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 780px){
 
   .project-overview{
     display: grid;
