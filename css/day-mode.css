@@ -453,6 +453,11 @@ input:checked + .slider:before {
 
   }
 
+  .self-portrait{
+    height: 80%;
+    width: 80%;
+    min-width: 200px;
+  }
 
 
 @media screen and (max-width: 1000px){
