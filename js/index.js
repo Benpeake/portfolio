@@ -123,7 +123,7 @@ fetch('portfolio.json')
             <div id = "`+ project.section +`" class="project-overview">
                 <div class="project-image"><img src="` + project.img + `" alt="image placeholder"></div>
                 <div class="project-copy copy">
-                    <h2 class="project-title green">`+ project.title + `</h2>
+                    <h2 class="project-title">`+ project.title + `</h2>
                     <p class="project-description">`+ project.description +`</p>
                     <P class="project-links"><a href="`+ project.livelink +`" target="__blank" rel="noopener" >Live version</a><a href="`+ project.github +` "target="__blank" rel="noopener">Github</a></P>
                 </div>
