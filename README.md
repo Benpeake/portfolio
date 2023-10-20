@@ -1,4 +1,4 @@
-# tic-tac-toe
+# Portfolio
 
 - 👀 live view <a href="https://benpeake.github.io/portfolio/" target="_blank">here<a/>
 - 👉 Personal portfolio build
