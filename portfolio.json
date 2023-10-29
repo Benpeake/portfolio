@@ -3,7 +3,7 @@
         {
           "title": "Colorator",
           "img": "images/colorator.png",
-          "description": "A self-initiated project to build and design a colour palette tool. I used React to make a dynamic front-end, Laravel to create an API that manages users saved palettes and an open source API fetches specific colour infomation. The application allows a user to randomly generate a colour palette, along with numerous additional functionality to control customisation, helping to quickly create and store their ideal palette(s)! The colorator API is tested using Laravels testing capabilities.",
+          "description": "A self-initiated project to build/design a colour palette tool. I used React to make a dynamic front-end, and Laravel to create an API that manages users saved palettes. The application allows a user to randomly generate a colour palette, along with numerous additional functionality that controls customisation to help create and store their ideal palette(s)! tested using Laravel testing",
           "section": "project-1",
           "livelink": "https://colorator-fe.2023-benp.dev.io-academy.uk/",
           "github": "https://github.com/Benpeake/colorator"
