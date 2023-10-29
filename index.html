@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ben Peake Portfolio</title>
+    <title>Ben Peake | Web-developer</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-    <link rel="stylesheet" id="day-mode-stylesheet" href="css/day-mode.css">
-    <link rel="stylesheet" id="night-mode-stylesheet" href="css/night-mode.css">
+    <link rel="stylesheet" id="stylesheet" href="css/style.css">
 
 
-    <meta name="description" content="Template HTML file">
-    <meta name="author" content="iO Academy">
+    <meta name="description" content="Ben Peake web-developer portfolio">
+    <meta name="author" content="BenDev">
 
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 
@@ -26,102 +25,88 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 
     <script defer src="js/index.js"></script>
 
 </head>
-
-<body>
-                <!-- night-day toggle -->
-                <div class="container hide">
-                    <label class="switch" for="checkbox">
-                      <input type="checkbox" id="checkbox" />
-                      <div class="slider round"></div>
-                    </label>
-                  </div>
-                   <!-- night-day toggle -->
-                </div>
+<body class="light-mode">
+    <p class="nav-center-top"><a class="nav-link" href="index.html">Ben Peake</a></p>
+    <div class="nav-center-bottom hide">
+        <label class="switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        </div>   
     <div class="snap-scroll">
-                <!-- Rounded switch -->
-<!-- MOBILE NAVIGATION START -->
-    <navigation class="mobile-nav"> 
-        <p class="nav-item"><a href ="index.html" class="logo underline mob-logo">Ben Peake</a></p>
-        <div class="mobile-plus-no-rotate"><a class="plus-button" href="#">+</a></div>
-    </navigation>
-<!-- MOBILE NAVIGATION START -->
-
-
-<!-- NAVIGATION START -->
-    <div class="navigation">
-
-        <nav class="top-bar">
-            <div>
-            <div class="nav-item nav-item-link project-button"><span>Projects</span></div>
-<!-- PROJECTS DROP DOWN START -->
+        <!-- mob nav -->
+        <div class="mob-nav">
+            <div class="mob-top-left">
+                <a class="nav-link" href="index.html">Ben Peake</a>
+            </div>
+            <div class="mob-top-right">
+                <span class="material-symbols-outlined mobile-icon">
+                    add
+                </span>
+            </div>
+        </div>
+        <!-- mob nav -->
+        <!-- nav -->
+        <div class="nav-top">
+            <div class="nav-left">
+                <p class="nav-item"><a class="nav-link project-button">Projects</a></p>
+            </div>
+            <div class="nav-right">
+                <p class="nav-item"><a class="nav-link" href="pdf/Ben_Peake_CV.pdf" target="_blank" rel="noopener" href="">CV-pdf</a></p>
+            </div>
+        </div>
+        <!-- projects dropdown -->
         <div class="project-dropdown">
-            
-                <!-- POPULATED FROM JSON -->
+            <!-- POPULATED FROM JSON -->
         </div>
+        <!-- projects dropdown -->
+        <div class="nav-bottom">
+            <div class="nav-left">
+                <p class="nav-item"><a class="nav-link" href="mailto:benpeake.dev@gmail.com" target="_blank">Email</a></p>
+            </div>
+            <div class="nav-right">
+                <p class="nav-item"><a class="nav-link" href="https://github.com/Benpeake" target="_blank" rel="noopener">Github</a></p>
+            </div>
         </div>
-<!-- PROJECTS DROP DOWN END-->
-            <p class="nav-item"><a href="index.html" class="logo underline">Ben Peake</a></p>
-            <div class="nav-item"><a  class="nav-item nav-item-link" href="pdf/Ben_Peake_CV.pdf" target="_blank" rel="noopener">CV-pdf</a></div>
-        </nav>
-        <nav class="bottom-bar-home">
-            <div class="nav-item"><a class="footerlink email-adress nav-item nav-item-link" href="mailto:benpeake.dev@gmail.com" target="_blank">Email</a></div>
-            <!-- night-day toggle -->
-            <!-- <div class="container">
-                <label class="switch" for="checkbox">
-                  <input type="checkbox" id="checkbox" /
-                  <div class="slider round"></div>
-                </label>
-              </div> -->
-               <!-- night-day toggle -->
-            <div class="nav-item"><a class="footerlink nav-item nav-item-link" href="https://github.com/Benpeake" target="_blank" rel="noopener">Github</a></div>
-        </nav>
-<!-- INTRO PAGE START -->
-        <main id="top-of-site" class="down-cursor">
-            <div class="intro-copy">
-                <div>
-                <h1 class="project-title">Hey, I'm Ben.</h1>
-                <p class="project-description">Keen problem solver and enthusiastic learner. Developer, graphic designer, illustrator and street food business owner. I'm a recent full stack bootcamp grad with iO Academy and I'm passionate about how technology can improve everyday life.</p>
+        <!-- nav -->
+        <!-- intro page -->
+        <section id="top-of-site">
+            <div class="intro-page">
+                <div class="project-image">
+                    <img class="self-portrait" src="images/self-portrait.png" alt="self portrait illustration">
                 </div>
-                <div class="project-image"><img class="self-portrait" src="images/self_port.png" alt="self portrait"></div>
+                <div>
+                    <h1 class="large-copy">Hey, I'm Ben.</h1>
+                    <p class="copy">
+                        Keen problem solver and enthusiastic learner. Developer, graphic designer, illustrator and street food business owner. I'm a recent full stack bootcamp grad with iO Academy and am currently seeking new opportunties.
+                    </p>
+                </div>
             </div>
-        </main>
-<!-- INTRO PAGE END -->
-    </div>
-<!-- NAVIGATION END -->
-
-<!-- PROJECT START -->
-<div class="json-section">
-</div>
-<!-- PROJECT END -->
-
-
-<section class="end-page thanks" id="exit-page">
-    <div class="exit-copy">
-        <h2 class="project-title central">Thanks for your time.</h2>
-        <p class="project-description central">Please email me if you'd like to get in touch.</p>
-        <p class="project-links central" ><a class="project-links central" mailto:benpeake.dev@gmail.com target="_blank">Benpeake.dev@gmail.com</a></p>
-    </div>
-</section>
-
-
-<!-- MOB MENU START-->
-    <div class="mob-menu">
-        <div class="mobile_menu_pop">
-            <div class="mobile_menu">
-                <ul>
-                    <li><a href="pdf/Ben_Peake_CV.pdf" target="_blank">CV</a></li>
-                    <li><a class="projects-submenu" href="#">Projects</a></li>
-                </ul>
+        </section>
+         <!-- intro page -->
+         <!-- JSON projects-->
+         <div class="json-section"></div>
+         <!-- JSON projects-->
+        <!-- exit page -->
+        <section id="exit-page">
+            <div class="exit-page">
+                <h2 class="large-copy">Thanks for your time.</h2>
+                <p class="copy" >Please email if you'd like to contact me - <a class="body-link" href="mailto:benpeake.dev@gmail.com" target="_blank">benpeake.dev@gmail.com</a></p>
             </div>
+        </section>
+         <!-- exit page -->
+         <!-- MOB MENU START-->
+    <div class="mob-menu-container">
+        <div class="mob-menu">
+            <!-- from json -->
         </div>
-        <div class="bottomMob">
-            <p><a class = "mobile-project-link" href="https://github.com/Benpeake" target="_blank">Github</a><p>
-            <p><a class = "mobile-project-link" href="mailto:benpeake.dev@gmail.com" target="_blank">Email</a></p>
-        </div>
+    </div>
 <!-- MOB MENU END-->
     </div>
 </body>
