@@ -95,7 +95,7 @@ body {
   justify-content: center;
   align-content: center;
   min-height: 300px;
-  width: 60%;
+  width: 70%;
 }
 
 section{
@@ -120,7 +120,7 @@ section{
     padding: 0;
     text-align: center;
     margin: 0 200px;
-    width: 60%;
+    width: 70%;
   }
 
   .self-portrait{
@@ -165,7 +165,7 @@ section{
     align-content: center;
     min-height: 300px;
     max-width: 900px;
-    width: 60%;
+    width: 70%;
   }
 
   .project-copy{
@@ -178,7 +178,7 @@ section{
   }
 
   .project-description{
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 0;
     padding: 0;
   }
@@ -402,7 +402,7 @@ li{
   }
 
   .project-description{
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .project-title{
@@ -454,7 +454,7 @@ input:checked + .slider:before {
     align-content: center;
     min-height: 300px;
     max-width: 700px;
-    width: 60%;
+    width: 70%;
   }
 
 }
@@ -493,7 +493,7 @@ input:checked + .slider:before {
   }
 
   .project-description{
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .project-title{
@@ -551,7 +551,7 @@ input:checked + .slider:before {
   min-height: 300px;
   max-height: 300px;
   max-width: 500px;
-  width: 60%;
+  width: 70%;
 }
 
 .project-copy{
@@ -611,7 +611,7 @@ input:checked + .slider:before {
     min-height: 300px;
     max-height: 300px;
     max-width: 400px;
-    width: 60%;
+    width: 70%;
   }
   .project-copy{
     display: grid;
@@ -636,7 +636,7 @@ input:checked + .slider:before {
   }
 
   .project-description{
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .project-title{
@@ -690,7 +690,7 @@ input:checked + .slider:before {
     min-height: 300px;
     max-height: 300px;
     max-width: 330px;
-    width: 60%;
+    width: 70%;
   }
 }
 @media screen and (max-width: 600px){
@@ -728,7 +728,7 @@ input:checked + .slider:before {
     justify-content: center;
     align-content: center;
     min-height: 300px;
-    width: 60%;
+    width: 70%;
   }
 
   .large-copy{
@@ -742,7 +742,7 @@ input:checked + .slider:before {
   }
 
   .project-description{
-    font-size: 0.75rem;
+    font-size: 1.1rem;
   }
 
   .project-title{
