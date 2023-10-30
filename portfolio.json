@@ -6,7 +6,8 @@
           "description": "A self-initiated project to build / design a colour palette tool. I used React to make a dynamic front-end, and Laravel to create an API to manage users saved palettes. The application allows a user to randomly generate a colour palette, with  additional functionality to control customisation and help create / store their ideal palette(s)!",
           "section": "project-1",
           "livelink": "https://colorator-fe.2023-benp.dev.io-academy.uk/",
-          "github": "https://github.com/Benpeake/colorator"
+          "github": "https://github.com/Benpeake/colorator",
+          "tech": "React / Laravel"
         },
     
         {
@@ -15,7 +16,8 @@
           "description": "A collection app that allows a user to maintain and show off their record collection. Created using OOP principles with vanilla PHP and a MySQL database, without a framework in order to gain a deeper understanding of CRUD operations. This was an individual project with pull request reviews required upon the completion of each story. Fully unit tested.",
           "section": "project-2",
           "livelink": "https://2023-benp.dev.io-academy.uk/collection/index.php",
-          "github": "https://github.com/Benpeake/collection"
+          "github": "https://github.com/Benpeake/collection",
+          "tech": "PHP / MySQL"
         }
           
       ]

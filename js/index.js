@@ -37,10 +37,11 @@ fetch('portfolio.json')
         `
         <section class="project">
             <div id = "`+ project.section +`" class="project-overview">
-                <div class="project-image">
-                    <img src="` + project.img + `" alt="`+ project.title+ `">
+                <div>
+                    <img class="project-image" src="` + project.img + `" alt="`+ project.title+ `">
                 </div>
                 <div class="project-copy copy">
+                <div class="title-container">
                     <div class="title-bar">
                         <h2 class="project-title">
                         <a href="`+ project.livelink +`" target="__blank" rel="noopener">
@@ -54,6 +55,8 @@ fetch('portfolio.json')
                                 outbound
                             </a>
                         </span>
+                    </div>
+                        <p class="tech-copy">`+ project.tech +`</p>
                     </div>
                     <p class="project-description">`+ project.description +`</p>
                 </div>

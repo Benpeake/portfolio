@@ -331,7 +331,7 @@ ul{
   padding: 0;
   margin: 0 0 0 22px;
   font-size: 2rem;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 li{
@@ -363,6 +363,29 @@ li{
   width: 100%;
   border: none;
   border-top: 2px solid;
+}
+
+.project-image{
+  border: solid 2.5px;
+  padding: 0;
+  margin: 0;
+}
+
+.title-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  font-size: 0.8rem;
+}
+
+.small-print{
+  font-size: 0.8rem;
+  opacity: 0.6;
+  margin-top: 40px;
+}
+
+.tech-copy{
+  opacity: 0.6;
 }
 
 
@@ -459,6 +482,13 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 1100px){
+
+  .project-image{
+    border: solid 2px;
+    padding: 0;
+    margin: 0;
+  }
+
   .nav-top{
     font-size: 1.7rem;
   }
@@ -596,6 +626,7 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 850px){
+
   .project-overview{
     display: grid;
     grid-template-columns:1fr;
