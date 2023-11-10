@@ -591,4 +591,31 @@ h2{
     justify-content: start;
   }
 
+
+.project-details-container{
+  width: 80%;
+}
+
+.project-detail-copy{
+  font-size: 20px; 
+} 
+
+.project-detail-copy-container{
+}
+
+.close-icon{
+  width: 30px;
+}
+
+.project-detail-link{
+  font-size: 15px;
+  text-underline-offset:6px;
+  text-decoration-thickness: 1.5px;
+}
+
+.project-detail-link:hover{
+  opacity: 0.6;
+  cursor: pointer;
+}
+
 }
