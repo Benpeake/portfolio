@@ -1,135 +1,154 @@
-const projectButton = document.querySelector('.project-button')
-const projectDropMenu = document.querySelector('.project-dropdown')
-const mobilePlus = document.querySelector('.mob-top-right')
-const mobileMenu = document.querySelector('.mob-menu-container')
-const mobilePlusIcon = document.querySelector('.mobile-icon')
+const openIcons = document.querySelectorAll(".open-project");
+const modalTarget = document.querySelector(".project-full-screen");
 
-//day/night mode
-const toggleButton = document.getElementById('checkbox')
-const body = document.body;
-let cursorUp = `url('images/up_cursor.svg'), auto`
-let cursorDown = `url('images/down_cursor.svg'), auto`
+const scaleFactor = window.innerWidth * 0.01; // 1% of the viewport width
+document.documentElement.style.setProperty('--scale-factor', scaleFactor);
 
-toggleButton.addEventListener('click', () => {
-  if (body.classList.contains('light-mode')) {
-    body.classList.remove('light-mode')
-    body.classList.add('dark-mode')
-    cursorUp = `url('images/up_cursor_day.svg'), auto`
-    cursorDown = `url('images/down_cursor_day.svg'), auto`
-  } else {
-    body.classList.remove('dark-mode')
-    body.classList.add('light-mode')
-    cursorUp = `url('images/up_cursor.svg'), auto`
-    cursorDown = `url('images/down_cursor.svg'), auto`
+
+// insert json
+fetch("portfolio.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const projectSection = document.querySelector(".project-section");
+
+    data.projects.forEach((project) => {
+      projectSection.innerHTML +=
+        `
+            <div class="project">
+                <div class="project-top">
+                    <img class="project-img" src="` +
+        project.img +
+        `" alt="` +
+        project.title +
+        `"> 
+                    <div class="icon-container">
+                        <span class="material-symbols-outlined filled open-project">
+                            add_circle
+                        </span>
+                    </div>
+                </div>
+                <div class="project-bottom">
+                    <div class="project-bottom-left">
+                        <div class="project-title-container">
+                            <h2 class="project-title">
+                            ` +
+        project.title +
+        `
+                            </h2>
+                            <span class="material-symbols-outlined">
+                            <a href="` +
+        project.livelink +
+        `" target="__blank" rel="noopener">
+                                outbound
+                            </a>
+                            </span>
+                        </div>
+                        <div class="project-tech">
+                            <p class="tech-details">
+                            ` +
+        project.tech +
+        `
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-bottom-right">
+                        <p class="project-blurb">
+                        ` +
+        project.synops +
+        `
+                        </p>
+                    </div>
+                </div>
+            </div>
+            `;
+    });
+
+    //project details
+    const openProjectIcons = document.querySelectorAll('.open-project');
+
+    let chosenProject = null;
+
+    openProjectIcons.forEach((icon, index) => {
+        icon.addEventListener('click', () => {
+            chosenProject = data.projects[index]; 
+            displayProjectDetails(chosenProject);
+            openProject()
+        });
+    });
+
+  });
+
+  modalTarget.addEventListener('click', (e) => {
+    if (e.target.classList.contains('close-icon')) {
+        closeProject();
+    }
+});
+  
+
+//scroll effect
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollLinks = document.querySelectorAll(".scroll-link");
+
+  scrollLinks.forEach((link) => {
+    link.addEventListener("click", smoothScroll);
+  });
+
+  function smoothScroll(e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute("href");
+    const targetPosition = document.querySelector(targetId).offsetTop;
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition;
+    const duration = 1500; // Adjust the scroll duration as needed
+    let start = null;
+
+    function animation(currentTime) {
+      if (start === null) start = currentTime;
+      const timeElapsed = currentTime - start;
+      const run = ease(timeElapsed, startPosition, distance, duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) requestAnimationFrame(animation);
+    }
+
+    function ease(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
   }
 });
 
-//Fetch JSON
-fetch('portfolio.json')
-    .then((response) => response.json())
-    .then(data => {
+//functions
 
-        //project pages
-        const projectTarget = document.querySelector('.json-section')
+function openProject() {
+  modalTarget.classList.remove("close-modal");
+}
 
-        data.projects.forEach(project => {
-            projectTarget.innerHTML += 
-        `
-        <section class="project">
-            <div id = "`+ project.section +`" class="project-overview">
+function closeProject(){
+    modalTarget.classList.add("close-modal");
+}
+
+function displayProjectDetails(project) {
+    modalTarget.innerHTML =
+        `<div class="project-details-container">
+            <div class="project-details-title-bar">
                 <div>
-                    <img class="project-image" src="` + project.img + `" alt="`+ project.title+ `">
+                    <h2 class="headline">` + project.title + `</h2>
                 </div>
-                <div class="project-copy copy">
-                <div class="title-container">
-                    <div class="title-bar">
-                        <h2 class="project-title">
-                        <a href="`+ project.livelink +`" target="__blank" rel="noopener">
-                        `
-                        + project.title + 
-                        `
-                        </a>
-                        </h2>
-                        <span class="material-symbols-outlined larger-icon">
-                            <a href="`+ project.livelink +`" target="__blank" rel="noopener">
-                                outbound
-                            </a>
-                        </span>
-                    </div>
-                        <p class="tech-copy">`+ project.tech +`</p>
-                    </div>
-                    <p class="project-description">`+ project.description +`</p>
-                </div>
+
+                <img class="close-icon" src="images/close-light.svg" alt="Close icon">
+
             </div>
-        </section>
-        `
-
-        })
-
-        // project drop-dow   
-        let projectMenuContent = "<ul>"
-        data.projects.forEach(project =>{
-            projectMenuContent += `<li><a href="#`+ project.section +`">`+ project.title +`</a></li>`
-            projectDropMenu.innerHTML = projectMenuContent + "</ul>"
-        })
-
-        //mob menu pages
-        const mobileMenuTarget = document.querySelector('.mob-menu')
-        data.projects.forEach(project => {
-            mobileMenuTarget.innerHTML+= 
-            ` 
-            <p><a class="mob-project-link" href="#`+ project.section +`">`+ project.title +`</a></p>
-            `
-        })
-
-        mobileMenuTarget.innerHTML+= 
-        `          
-        <hr class="horizontal-line">
-        <p><a class="mob-nav-link" href="mailto:benpeake.dev@gmail.com" target="_blank">Email</a></p>
-        <p><a class="nav-link" href="https://github.com/Benpeake" target="_blank" rel="noopener">Github</a></p>
-        `
-        document.querySelectorAll('.mob-project-link').forEach(link =>{
-            link.addEventListener('click', () =>{
-                mobileMenu.classList.toggle('mob-menu-apear')
-                mobilePlus.classList.toggle('mobile-icon-rotate')
-        })
-        })
-    })
-
-
-
-//cursor switch
-const introPage = document.getElementById('top-of-site');
-const exitPage = document.getElementById('exit-page');
-
-const halfway = window.innerHeight / 2;
-
-document.addEventListener('mousemove', function (mouse) {
-    // Get the bounding rectangles for introPage and exitPage
-    const introRect = introPage.getBoundingClientRect();
-    const exitRect = exitPage.getBoundingClientRect();
-
-    if (
-        mouse.clientY >= introRect.top && mouse.clientY <= introRect.bottom
-    ) {
-        document.body.style.cursor = cursorDown
-    } else if (
-        mouse.clientY >= exitRect.top && mouse.clientY <= exitRect.bottom
-    ) {
-        document.body.style.cursor = cursorUp 
-    } else if (mouse.clientY < halfway) {
-        document.body.style.cursor = cursorUp 
-    } else {
-        document.body.style.cursor = cursorDown
-    }
-})
-
-projectButton.addEventListener('click', () =>{
-    projectDropMenu.classList.toggle('project-dropdown-appear')
-})
-
-mobilePlus.addEventListener('click', () =>{
-    mobileMenu.classList.toggle('mob-menu-apear')
-    mobilePlus.classList.toggle('mobile-icon-rotate')
-})
-
+            <div class="project-detail-copy-container">
+                <p class="project-detail-copy">` + project.description +`</p>
+            </div>
+            <div class="project-detail-links">
+                <p class="project-detail-link"><a href="`+ project.github +`" target="_blank" rel="noopener">Github</a></P>
+                <p class="project-detail-link"><a href="`+ project.livelink +`" target="_blank" rel="noopener">Live view</a></P>
+            </div>
+        </div>`;
+}

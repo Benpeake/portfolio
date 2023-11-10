@@ -11,7 +11,6 @@
 
     <link rel="stylesheet" id="stylesheet" href="css/style.css">
 
-
     <meta name="description" content="Ben Peake web-developer portfolio">
     <meta name="author" content="BenDev">
 
@@ -26,89 +25,107 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
 
 
     <script defer src="js/index.js"></script>
 
 </head>
-<body class="light-mode">
-    <p class="nav-center-top"><a class="nav-link" href="index.html">Ben Peake</a></p>
-    <div class="nav-center-bottom">
-        <label class="switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
-        </label>
-        </div>   
-    <div class="snap-scroll">
-        <!-- mob nav -->
-        <div class="mob-nav">
-            <div class="mob-top-left">
-                <a class="nav-link" href="index.html">Ben Peake</a>
-            </div>
-            <div class="mob-top-right">
-                <span class="material-symbols-outlined mobile-icon">
-                    add
-                </span>
-            </div>
-        </div>
-        <!-- mob nav -->
-        <!-- nav -->
-        <div class="nav-top">
+<body>
+    <div id="top" class="intro-section dark-mode">
+        <nav>
             <div class="nav-left">
-                <p class="nav-item"><a class="nav-link project-button">Projects</a></p>
+            <p class="nav-item bold">Ben Peake</p>
             </div>
             <div class="nav-right">
-                <p class="nav-item"><a class="nav-link" href="pdf/Ben_Peake_CV.pdf" target="_blank" rel="noopener" href="">CV-pdf</a></p>
+                <p class="nav-item lessOpacity"><a href="#work" class="scroll-link">Projects</a></p>
+                <p class="nav-item download lessOpacity"><a href="pdf/BenPeake_CV.pdf" target="_blank" rel="noopener">cv-download</a></p>
             </div>
-        </div>
-        <!-- projects dropdown -->
-        <div class="project-dropdown">
-            <!-- POPULATED FROM JSON -->
-        </div>
-        <!-- projects dropdown -->
-        <div class="nav-bottom">
-            <div class="nav-left">
-                <p class="nav-item"><a class="nav-link" href="mailto:benpeake.dev@gmail.com" target="_blank">Email</a></p>
+        </nav>
+        <div class="sub-section dark-mode">
+            <div class="intro-left">
+                <h1 class="headline">Hello, I'm Ben.<br>Enthusiastic web-developer with a passion for making things with code.</h1>
             </div>
-            <div class="nav-right">
-                <p class="nav-item"><a class="nav-link" href="https://github.com/Benpeake" target="_blank" rel="noopener">Github</a></p>
+            <div class="intro-right">
+                <!-- currently nothing on the right -->
             </div>
-        </div>
-        <!-- nav -->
-        <!-- intro page -->
-        <section id="top-of-site">
-            <div class="intro-page">
-                <div class="">
-                    <img class="self-portrait" src="images/self-portrait.png" alt="self portrait illustration">
-                </div>
-                <div>
-                    <h1 class="large-copy">Hello, I'm Ben.</h1>
-                    <p class="copy">
-                        Keen problem solver, enthusiastic learner, and recent full stack bootcamp grad with iO Academy. I have a natural interest in front-end development and usability due to my background in design, but I am also versed in back-end development and really enjoy the different types of problem-solving challenges it presents. Please find examples of my work below...
-                    </p>
-                </div>
-            </div>
-        </section>
-         <!-- intro page -->
-         <!-- JSON projects-->
-         <div class="json-section"></div>
-         <!-- JSON projects-->
-        <!-- exit page -->
-        <section id="exit-page">
-            <div class="exit-page">
-                <h2 class="large-copy">Thanks for your time.</h2>
-                <p class="copy" >Please email if you'd like to contact me - <a class="body-link" href="mailto:benpeake.dev@gmail.com" target="_blank">benpeake.dev@gmail.com</a></p>
-                <p class="small-print">site made using HTML / CSS / JavaScript | © Ben Peake 2023</p>
-            </div>
-        </section>
-         <!-- exit page -->
-         <!-- MOB MENU START-->
-    <div class="mob-menu-container">
-        <div class="mob-menu">
-            <!-- from json -->
         </div>
     </div>
-<!-- MOB MENU END-->
+    <div class="sub-section contact dark-mode">
+        <div class="contact-item">
+            <p class="contact lessOpacity">CONTACT</p>
+            <p class="link contact"><a href="mailto:benpeake.dev@gmail.com" target="_blank">benpeake.dev@gmail.com</a></p>
+        </div>
+        <div class="contact-item">
+            <p class="contact lessOpacity">GITHUB</p>
+            <p class="link contact"><a href="https://github.com/Benpeake" target="_blank" rel="noopener">@benpeake</a></p>
+        </div>
+        <div class="contact-item">
+            <p class="contact disapear lessOpacity">LOCATION</p>
+            <p class="contact disapear">Bath/Bristol UK</p>
+        </div>
     </div>
+    <div class="sub-section aboutMe dark-mode">
+        <p class="lessOpacity">
+            I'm a recent full stack bootcamp grad with <a class="italic body-link" href="https://io-academy.uk/" target="_blank" rel="noopener">iO Academy</a>. I have a natural interest in front-end development and usability due to my background in design, but I am also versed in back-end development and really enjoy the different types of problem-solving challenges it presents.
+        </p>
+    </div>
+<!-- /* carousel */ -->
+<div id="work" class="marquee blue-mode">
+    <ul class="marquee__content">
+      <li class="marquee-item">WORK</li>
+      <img class="marquee-item star-icon" src="images/star-white.svg" alt="Star icon">
+      <li class="marquee-item">WORK</li>
+      <img class="marquee-item star-icon" src="images/star-white.svg" alt="Star icon">
+      <li class="marquee-item">WORK</li>
+      <img class="marquee-item star-icon" src="images/star-white.svg" alt="Star icon">
+      <li class="marquee-item">WORK</li>
+      <img class="marquee-item star-icon" src="images/star-white.svg" alt="Star icon">
+    </ul>
+    <!-- Mirrors the content above -->
+    <ul class="marquee__content">
+        <li class="marquee-item">WORK</li>
+        <img class="marquee-item star-icon" src="images/star-white.svg" alt="Star icon">
+        <li class="marquee-item">WORK</li>
+        <img class="marquee-item star-icon" src="images/star-white.svg" alt="Star icon">
+        <li class="marquee-item">WORK</li>
+        <img class="marquee-item star-icon" src="images/star-white.svg" alt="Star icon">
+        <li class="marquee-item">WORK</li>
+        <img class="marquee-item star-icon" src="images/star-white.svg" alt="Star icon">
+    </ul>
+  </div>
+<!-- /* carousel */ -->
+  <div class="project-section light-mode">
+    <!-- populsted from json -->
+  </div>
+  <footer class="dark-mode">
+    <div class="footer-top">
+        <div>
+            <h2 class="headline">Thanks for your time.</h2>
+        </div>
+        <div>
+            <img href="#top" class="up-icon scroll-link" src="images/up-icon.svg" alt="Up arrow">
+        </div>
+    </div>
+    <div class="footer-contact dark-mode">
+        <p class="footer-copy">Please email if you'd like to get in touch - <a class="italic-light" href="mailto:benpeake.dev@gmail.com" target="_blank">benpeake.dev@gmail.com</a></p>
+        <div class="footer-bottom-line">
+            <div class="footer-links" >
+                <p class="footer-link"><a href="https://github.com/Benpeake" target="_blank" rel="noopener">Github</a></p>
+                <p class="footer-link"><a href="pdf/BenPeake_CV.pdf" target="_blank" rel="noopener">CV-download</a></p>
+                <p class="footer-link"><a>LinkedIn</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom-line-right">
+            <div class="copy" >
+                <p>© Copyright 2023 | Site designed & built by Ben Peake</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- modal for projects -->
+  <div class="close-modal project-full-screen">
+
+  </div>
 </body>
 </html>
