@@ -10,6 +10,15 @@
   --blue: #256EFF;
 }
 
+/* .gradient-text {
+  background: linear-gradient(45deg, var(--grey), var(--blue), var(--grey));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+} */
+
+
 a{
   text-decoration: none;
   padding: 0;
@@ -30,6 +39,8 @@ a{
 .blue-mode{
   background-color: var(--blue);
   color: var(--black);
+  border-top: 0.3vw solid var(--grey);
+  border-bottom: 0.4vw solid;
 }
 
 body {
@@ -528,6 +539,10 @@ h2{
     opacity: 0.6;
     font-size: 28px; 
   }
+  .blue-mode{
+    border-top: 3px solid var(--grey);
+    border-bottom: 4px solid;
+  }
   
 }
 
@@ -560,6 +575,11 @@ h2{
   
   .filled{
     transform: scale(1.4); 
+}
+
+.blue-mode{
+  border-top: 2px solid var(--grey);
+  border-bottom: 3px solid;
 }
   
   }
