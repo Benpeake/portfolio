@@ -10,15 +10,6 @@
   --blue: #256EFF;
 }
 
-/* .gradient-text {
-  background: linear-gradient(45deg, var(--grey), var(--blue), var(--grey));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  display: inline-block;
-} */
-
-
 a{
   text-decoration: none;
   padding: 0;
