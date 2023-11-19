@@ -434,6 +434,15 @@ h2{
   opacity: 0.6;
   cursor: pointer;
 }
+.logo{
+  width: 2.8vw;
+}
+
+.nav-left{
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+}
 
 @media screen and (max-width: 1500px){
   .material-symbols-outlined {
@@ -535,6 +544,12 @@ h2{
     border-top: 3px solid var(--grey);
     border-bottom: 4px solid;
   }
+  .logo{
+    width: 28px;
+  }
+  .nav-left{
+    gap: 6px;
+  }
   
 }
 
@@ -574,6 +589,13 @@ h2{
 .blue-mode{
   border-top: 2px solid var(--grey);
   border-bottom: 3px solid;
+}
+
+.logo{
+  width: 26px;
+}
+.nav-left{
+  gap: 6px;
 }
   
   }
@@ -630,6 +652,13 @@ h2{
 .project-detail-link:hover{
   opacity: 0.6;
   cursor: pointer;
+}
+
+.logo{
+  width:23px;
+}
+.nav-left{
+  gap: 6px;
 }
 
 }
