@@ -216,7 +216,8 @@ ul{
   width: 100%;
   padding: 0;
   margin: 0;
-  border: solid 0.2vw;
+  border-radius: 1vw;
+  border: solid 1.5vw #D1D1D1; 
 }
 
 h2{
@@ -549,8 +550,10 @@ h2{
 .project-title-container{
   gap: 2.3vw;
 }
+
 .project-img{
-  border: solid 0.4vw;
+  border-radius: 1.5vw;
+  border: solid 3vw #D1D1D1; 
 }
 }
 
