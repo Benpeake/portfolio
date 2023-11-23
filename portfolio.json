@@ -12,21 +12,9 @@
           "synops": "A colour palette tool that allows a user to build, customise and save a colour palette."
 
         },
-    
-        {
-          "id": 1,
-          "title": "My-Records",
-          "img": "images/collection-app.png",
-          "description": "A collection app that allows a user to maintain and show off their record collection. Created using OOP principles with vanilla PHP and a MySQL database, without a framework in order to gain a deeper understanding of CRUD operations. This was an individual project with pull request reviews required upon the completion of each story and is fully unit tested.",
-          "section": "project-2",
-          "livelink": "https://2023-benp.dev.io-academy.uk/collection/index.php",
-          "github": "https://github.com/Benpeake/collection",
-          "tech": "PHP / MySQL",
-          "synops": "A collection app that allows a user to maintain and show off their record collection."
-        },
 
         {
-          "id": 2,
+          "id": 1,
           "title": "Viridis",
           "img": "images/viridis.png",
           "description": "Website design and build for local garden design business. The website is fully responsive and utilises JavaScript to include multiple interactive elements that imporive the flow of the site and experience for the user. The application includes a simple quote calculator and uses formsubmit.co to handle form data as per request of the client.",
@@ -35,8 +23,20 @@
           "github": "https://github.com/Benpeake/viridis-site",
           "tech": "HTML / CSS / JavaScript",
           "synops": "Website design and build for local garden design business. *WIP"
+        },
+    
+        {
+          "id": 2,
+          "title": "My-Records",
+          "img": "images/collection-app.png",
+          "description": "A collection app that allows a user to maintain and show off their record collection. Created using OOP principles with vanilla PHP and a MySQL database, without a framework in order to gain a deeper understanding of CRUD operations. This was an individual project with pull request reviews required upon the completion of each story and is fully unit tested.",
+          "section": "project-2",
+          "livelink": "https://2023-benp.dev.io-academy.uk/collection/index.php",
+          "github": "https://github.com/Benpeake/collection",
+          "tech": "PHP / MySQL",
+          "synops": "A collection app that allows a user to maintain and show off their record collection."
         }
-          
+ 
       ]
 }
     
