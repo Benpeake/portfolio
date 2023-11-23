@@ -325,6 +325,10 @@ h2{
   margin: 0;
 }
 
+.copyright{
+  padding-bottom: 4vw !important;
+}
+
 .footer-links{
   display: flex;
   gap: 5vw;
@@ -669,6 +673,11 @@ h2{
 .footer-links{
   padding-top: 10vw;
   padding-bottom: 10vw;
+}
+
+.copyright{
+  padding-bottom: 8vw !important;
+  font-size: 12px;
 }
 
 }
