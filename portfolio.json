@@ -23,6 +23,18 @@
           "github": "https://github.com/Benpeake/collection",
           "tech": "PHP / MySQL",
           "synops": "A collection app that allows a user to maintain and show off their record collection."
+        },
+
+        {
+          "id": 2,
+          "title": "Viridis",
+          "img": "images/viridis.png",
+          "description": "Website design and build for local garden design business. The website is fully responsive and utilises JavaScript to include multiple interactive elements that imporive the flow of the site and experience for the user. The application includes a simple quote calculator and uses formsubmit.co to handle form data as per request of the client.",
+          "section": "project-3",
+          "livelink": "https://benpeake.github.io/viridis-site/",
+          "github": "https://github.com/Benpeake/viridis-site",
+          "tech": "HTML / CSS / JavaScript",
+          "synops": "Website design and build for local garden design business. *WIP"
         }
           
       ]

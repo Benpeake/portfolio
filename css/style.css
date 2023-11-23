@@ -78,7 +78,7 @@ nav{
 }
 
 .up-icon{
-  width: 3.6vw; 
+  width: 5.6vw; 
   height: auto; 
   opacity: 0.6;
 }
@@ -342,7 +342,7 @@ h2{
 }
 
 .footer-contact{
-  padding: 2vw 8vw;
+  padding: 0 8vw;
 }
 
 .footer-bottom-line-right{
@@ -489,14 +489,14 @@ h2{
     font-size: 32px;
   }
   .marquee-item{
-    font-size: 40px;
+    font-size: 32px;
   }
   img{
     width: 40px; 
     height: auto; 
   }
   .up-icon{
-    width: 36px; 
+    width: 56px; 
     height: auto; 
   }
   h2{
@@ -597,6 +597,11 @@ h2{
 .nav-left{
   gap: 6px;
 }
+
+  .up-icon{
+    width: 36px; 
+    height: auto; 
+  }
   
   }
 
@@ -606,6 +611,7 @@ h2{
     }
     .sub-section.aboutMe{
       grid-template-columns:100%;
+      font-size: 26px ;
     }
 
     .disapear{
@@ -660,5 +666,15 @@ h2{
 .nav-left{
   gap: 6px;
 }
+.footer-links{
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+}
 
+}
+
+@media screen and (max-width: 400px){
+  .up-icon{
+    display: none;
+  }
 }

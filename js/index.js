@@ -123,7 +123,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //functions
-
 function openProject() {
   modalTarget.classList.remove("close-modal");
 }
