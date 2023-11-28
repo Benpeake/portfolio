@@ -4,7 +4,6 @@ const modalTarget = document.querySelector(".project-full-screen");
 const scaleFactor = window.innerWidth * 0.01; // 1% of the viewport width
 document.documentElement.style.setProperty('--scale-factor', scaleFactor);
 
-
 // insert json
 fetch("portfolio.json")
   .then((response) => response.json())
@@ -76,6 +75,10 @@ fetch("portfolio.json")
         });
     });
 
+    function openProject() {
+        modalTarget.classList.add("open");
+      }
+
   });
 
   modalTarget.addEventListener('click', (e) => {
@@ -123,9 +126,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //functions
-function openProject() {
-  modalTarget.classList.add("open");
-}
 
 function closeProject(){
     modalTarget.classList.remove("open");
