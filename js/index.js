@@ -1,6 +1,5 @@
 const openIcons = document.querySelectorAll(".open-project");
 const modalTarget = document.querySelector(".project-full-screen");
-
 const scaleFactor = window.innerWidth * 0.01; // 1% of the viewport width
 document.documentElement.style.setProperty('--scale-factor', scaleFactor);
 
@@ -125,7 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-//functions
 
 function closeProject(){
     modalTarget.classList.remove("open");
