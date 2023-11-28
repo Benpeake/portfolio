@@ -30,11 +30,11 @@ fetch("portfolio.json")
                 <div class="project-bottom">
                     <div class="project-bottom-left">
                         <div class="project-title-container">
-                            <h2 class="project-title">
+                            <h3 class="project-title">
                             ` +
         project.title +
         `
-                            </h2>
+                            </h3>
                             <span class="material-symbols-outlined">
                             <a href="` +
         project.livelink +
