@@ -124,11 +124,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //functions
 function openProject() {
-  modalTarget.classList.remove("close-modal");
+  modalTarget.classList.add("open");
 }
 
 function closeProject(){
-    modalTarget.classList.add("close-modal");
+    modalTarget.classList.remove("open");
 }
 
 function displayProjectDetails(project) {
