@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const targetPosition = document.querySelector(targetId).offsetTop;
     const startPosition = window.scrollY;
     const distance = targetPosition - startPosition;
-    const duration = 1500; // Adjust the scroll duration as needed
+    const duration = 1500;
     let start = null;
 
     function animation(currentTime) {
