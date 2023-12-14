@@ -206,7 +206,7 @@
     padding: 0;
     margin: 0;
     border-radius: 1vw;
-    border: solid 1.5vw #D1D1D1; 
+    border: solid 0.6vw #D1D1D1; 
   }
 
 
@@ -223,14 +223,13 @@
       'opsz' 40;
   }
   .filled{
-    transform: scale(2); 
+    transform: scale(-2vw); 
     font-variation-settings:
     'FILL' 1,
     'wght' 400,
     'GRAD' 0,
     'opsz' 40;
-    color: var(--black);
-    background-color: var(--grey);
+    color: var(--blue);
     border-radius: 100%;
   }
 
@@ -587,6 +586,11 @@
   .info-copy{
     font-size: 14px;
   }
+
+  .project-img{
+    border-radius: 10px;
+    border: solid 6px #D1D1D1; 
+  }
   
 }
 
@@ -598,11 +602,6 @@
 
   .project-title-container{
     gap: 3.2vw;
-  }
-
-  .project-img{
-    border-radius: 1.5vw;
-    border: solid 3vw #D1D1D1; 
   }
 }
 
