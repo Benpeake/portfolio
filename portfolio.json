@@ -15,18 +15,6 @@
 
         {
           "id": 1,
-          "title": "Viridis",
-          "img": "images/viridis.png",
-          "description": "Website design and build for local garden design business. The website is fully responsive and utilises JavaScript to implement interactive elements that imporive the flow of the site and experience for the user.",
-          "section": "project-3",
-          "livelink": "https://benpeake.github.io/viridis-site/",
-          "github": "https://github.com/Benpeake/viridis-site",
-          "tech": "HTML / CSS / JavaScript",
-          "synops": "Website design and build for local garden design business."
-        },
-    
-        {
-          "id": 2,
           "title": "My-Records",
           "img": "images/collection-app.png",
           "description": "A collection app that allows a user to maintain and show off their record collection. Created using OOP principles with vanilla PHP and a MySQL database, without a framework in order to gain a deeper understanding of CRUD operations. This was an individual project with pull request reviews required upon the completion of each story and is fully unit tested.",
@@ -35,6 +23,18 @@
           "github": "https://github.com/Benpeake/collection",
           "tech": "PHP / MySQL",
           "synops": "A collection app that allows a user to maintain and show off their record collection."
+        },
+
+        {
+          "id": 2,
+          "title": "Viridis",
+          "img": "images/viridis.png",
+          "description": "Website design and build for local garden design business. The website is fully responsive and utilises JavaScript to implement interactive elements that imporive the flow of the site and experience for the user.",
+          "section": "project-3",
+          "livelink": "https://benpeake.github.io/viridis-site/",
+          "github": "https://github.com/Benpeake/viridis-site",
+          "tech": "HTML / CSS / JavaScript",
+          "synops": "Website design and build for local garden design business."
         }
  
       ]
