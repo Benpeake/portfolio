@@ -1,7 +1,7 @@
 const openIcons = document.querySelectorAll(".open-project");
 const modalTarget = document.querySelector(".project-full-screen");
 const scaleFactor = window.innerWidth * 0.01; // 1% of the viewport width
-document.documentElement.style.setProperty('--scale-factor', scaleFactor);
+document.documentElement.style.setProperty("--scale-factor", scaleFactor);
 
 // insert json
 fetch("portfolio.json")
@@ -40,7 +40,16 @@ fetch("portfolio.json")
                                 outbound
                             </a>
                             </span>
+                        
+                        <a href="` +
+        project.github +
+        `"
+                        target="_blank">
+                        <img src="images/github-mark-black.svg" class="github-icon"/>
+                        </a>
+
                         </div>
+
                         <div class="project-tech">
                             <p class="tech-details">
                             ` +
@@ -62,30 +71,28 @@ fetch("portfolio.json")
     });
 
     //project details
-    const openProjectIcons = document.querySelectorAll('.open-project');
+    const openProjectIcons = document.querySelectorAll(".open-project");
 
     let chosenProject = null;
 
     openProjectIcons.forEach((icon, index) => {
-        icon.addEventListener('click', () => {
-            chosenProject = data.projects[index]; 
-            displayProjectDetails(chosenProject);
-            openProject()
-        });
+      icon.addEventListener("click", () => {
+        chosenProject = data.projects[index];
+        displayProjectDetails(chosenProject);
+        openProject();
+      });
     });
 
     function openProject() {
-        modalTarget.classList.add("open");
-      }
-
+      modalTarget.classList.add("open");
+    }
   });
 
-  modalTarget.addEventListener('click', (e) => {
-    if (e.target.classList.contains('close-icon')) {
-        closeProject();
-    }
+modalTarget.addEventListener("click", (e) => {
+  if (e.target.classList.contains("close-icon")) {
+    closeProject();
+  }
 });
-  
 
 //scroll effect
 document.addEventListener("DOMContentLoaded", function () {
@@ -124,28 +131,35 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
-function closeProject(){
-    modalTarget.classList.remove("open");
+function closeProject() {
+  modalTarget.classList.remove("open");
 }
 
 function displayProjectDetails(project) {
-    modalTarget.innerHTML =
-        `<div class="project-details-container">
+  modalTarget.innerHTML =
+    `<div class="project-details-container">
             <div class="project-details-title-bar">
                 <div>
-                    <h2 class="headline">` + project.title + `</h2>
+                    <h2 class="headline">` +
+    project.title +
+    `</h2>
                 </div>
 
                 <img class="close-icon" src="images/close-light.svg" alt="Close icon">
 
             </div>
             <div class="project-detail-copy-container">
-                <p class="project-detail-copy">` + project.description +`</p>
+                <p class="project-detail-copy">` +
+    project.description +
+    `</p>
             </div>
             <div class="project-detail-links">
-                <p class="project-detail-link"><a href="`+ project.github +`" target="_blank" rel="noopener">Github</a></P>
-                <p class="project-detail-link"><a href="`+ project.livelink +`" target="_blank" rel="noopener">Live view</a></P>
+                <p class="project-detail-link"><a href="` +
+    project.github +
+    `" target="_blank" rel="noopener">Github</a></P>
+                <p class="project-detail-link"><a href="` +
+    project.livelink +
+    `" target="_blank" rel="noopener">Live view</a></P>
             </div>
         </div>`;
 }
