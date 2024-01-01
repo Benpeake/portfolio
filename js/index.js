@@ -157,6 +157,10 @@ function displayProjectDetails(project) {
                 <p class="project-detail-link"><a href="` +
     project.github +
     `" target="_blank" rel="noopener">Github</a></P>
+
+    <p class="seperate">|</p>
+
+
                 <p class="project-detail-link"><a href="` +
     project.livelink +
     `" target="_blank" rel="noopener">Live view</a></P>

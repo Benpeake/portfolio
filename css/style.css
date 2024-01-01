@@ -9,6 +9,7 @@
     --black: #1D1E18;
     --grey: #E6E8E6;
     --blue: #256EFF;
+    --darkGrey: #929491;
   }
 
   .headline{
@@ -23,7 +24,7 @@
   }
 
   h2{
-    font-size: 3.2vw;
+    font-size: 2.6vw;
     font-weight: 400;
     margin: 0;
   }
@@ -61,25 +62,31 @@
     font-family: 'Raleway', sans-serif;
   }
 
+  .darkGrey{
+    color: var(--darkGrey);
+  }
+
   .bold{
     font-weight: 600;
   }
 
   .italic{
     font-style: italic;
-    text-decoration: underline;
-    text-underline-offset: 0.6vw;
-    text-decoration-thickness: 0.2vw;
+    white-space: nowrap;
   }
-  
-  .italic-light{
-    font-style: italic;
-    text-decoration: underline;
-    text-underline-offset: 0.4vw;
-    text-decoration-thickness: 0.1vw;
-  }  
+  .italic:hover{
+    color: var(--grey);
+  }
 
   .lessOpacity{
+    opacity: 0.6;
+  }
+
+  .seperate{
+    font-size: 2vw;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
     opacity: 0.6;
   }
 
@@ -126,8 +133,9 @@
 /* Landing section */
   .about-section{
     display: grid;
-    grid-template-columns:2fr 1fr;
+    grid-template-columns:60% 40%;
     padding: 3.2vw 8vw;
+    font-size: 3.2vw;
   }
 
   .contact-section{
@@ -143,7 +151,6 @@
   .about-me-section{
     display: grid;
     grid-template-columns:90% 10%;
-    font-size: 3.2vw;
     padding: 3.2vw 8vw 9.6vw 8vw
   }
 
@@ -154,8 +161,8 @@
     overflow: hidden;
     user-select: none;
     gap: var(--gap);
-    padding-top: 1.6vw;
-    padding-bottom: 1.6vw;
+    padding-top: 1.2vw;
+    padding-bottom: 1.2vw;
   }
 
   ul{
@@ -165,7 +172,7 @@
   }
 
   .marquee-item{
-    font-size: 3.8vw;
+    font-size: 3.4vw;
     font-weight: 800;
   }
 
@@ -333,7 +340,7 @@
 
   .footer-copy{
     font-size: 1.4vw;
-    opacity: 0.6;
+    color: var(--darkGrey);
     padding: 0;
     margin: 0;
   }
@@ -430,7 +437,7 @@
   .project-detail-links{
     display: flex;
     justify-content: center;
-    gap: 6.4vw;
+    gap: 3.2vw;
   }
 
   .project-detail-link{
@@ -448,7 +455,6 @@
       opacity: 0.6;
       cursor: pointer;
     }
-
 
 @media screen and (max-width: 1500px){
   .material-symbols-outlined {
@@ -496,7 +502,7 @@
   }
 
   .project-detail-links{
-    gap: 64px;
+    gap: 32px;
   }
 
   .footer-top{
@@ -544,18 +550,18 @@
     font-size: 14px;
   }
   h2{
-    font-size: 32px;
+    font-size: 26px;
   } 
   h3{
     font-size: 18px;
   }
   .marquee-item{
-    font-size: 36px;
+    font-size: 34px;
   }
   .marquee {
     --gap: 32px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   .marquee__content img{
     width: 40px; 
@@ -642,6 +648,10 @@
   .github-icon{
     height: 25px;
   }
+
+  .seperate{
+    font-size: 20px;
+  }
   
 }
 
@@ -727,7 +737,7 @@
     }
 
     h2{
-      font-size: 28px;
+      font-size: 22px;
     } 
 
     .disapear{
