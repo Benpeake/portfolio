@@ -150,7 +150,7 @@
   }
   .about-me-section{
     display: grid;
-    grid-template-columns:90% 10%;
+    grid-template-columns:85% 15%;
     padding: 3.2vw 8vw 9.6vw 8vw
   }
 
